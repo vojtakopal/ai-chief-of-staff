@@ -22,12 +22,13 @@ tasks:
       Kristýna Eislerová assigned an onboarding task for the incoming Senior
       Data Scientist (start location Lucerna, Prague). Closing this hire is a
       stated Q3 goal — do not let the onboarding step stall.
-    status: "pending"
+    status: "complete"
     priority: 1
     due_date: "2026-06-09"
     goal_alignment: "hiring_and_ladder"
     created: "2026-06-08"
-    notes: "Gmail, BambooHR notification 2026-06-08. The Senior DS goal is effectively closing."
+    completed: "2026-06-08"
+    notes: "Gmail, BambooHR notification 2026-06-08. Senior DS hire onboarding step done 2026-06-08."
 
   - id: "task-2026-06-08-02"
     title: "Approve Tomáš Omasta business trip Jun 10-11 (BambooHR)"
