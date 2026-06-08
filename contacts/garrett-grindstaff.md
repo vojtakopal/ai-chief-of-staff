@@ -20,6 +20,7 @@
 ## Recent context (from email, added 2026-06-05)
 
 - Co-attended the Snowflake "Cortex Use Case Discussion" (Apr 2026) with the Snowflake account team.
+- Co-hosting a Snowflake relationship dinner with Aleksandra Nalewajek (Snowflake account team) at Sia, Prague (Mon Jun 8, 19:00).
 
 ## Communication style
 
@@ -32,4 +33,7 @@
 
 ## Last interaction
 
-- Not yet logged.
+- Date: 2026-06-08 (scheduled)
+- Channel: In person (dinner, Sia Prague)
+- Summary: Snowflake relationship dinner with Aleksandra Nalewajek's account team.
+- Follow-up: Use it to advance the Cortex / semantic-layer evaluation and read the cost trajectory.

@@ -28,6 +28,8 @@
 - snowflake-dbt project documentation (Notion, 2026-03-06).
 - "agentic-ai-sql-challenge" — semantic layers as the bridge between raw schemas and AI (Google Drive, 2026-03-16).
 - apify_data_querying_notes — Snowflake/Cortex access patterns (Google Drive, 2026-05-13).
+- Requested 3rd-party actor cost allocation for Axesso invoices (cost_allocation_type = actor, cost_allocation = R8WeJwLuzLZ6g4Bkk, junglee/amazon-reviews-scraper) via a Keboola transformation (Slack DM, 2026-06-04).
+- Pairing with Tom on a cost post-mortem next week (Slack, 2026-06-05).
 
 ## Communication style
 
@@ -41,4 +43,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Marta` to prep.
+- Date: 2026-06-04
+- Channel: Slack DM
+- Summary: Axesso actor cost-allocation setup request (Keboola transformation).
+- Follow-up: Configure the allocation (task-2026-06-08-08).

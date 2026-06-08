@@ -22,6 +22,7 @@
 
 - Pinged for help in #apify-request-access on data access.
 - Posted us-mission week notes (conferences, AgentCon) — relevant to CFP/talk targets.
+- Set a call for Fri Jun 12, 11:30 to cover AI enablement on data (Cortex AI) and whether anything critical needs backing up (Gmail invite, 2026-06-04).
 
 ## Communication style
 
@@ -34,4 +35,7 @@
 
 ## Last interaction
 
-- Not yet logged.
+- Date: 2026-06-04
+- Channel: Calendar / Gmail
+- Summary: Scheduled a Jun 12 call on Cortex AI enablement and backups.
+- Follow-up: Prep talking points tying Cortex enablement to Bára's Cortex vs Claude evaluation (task-2026-06-08-10).

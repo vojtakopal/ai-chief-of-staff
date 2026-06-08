@@ -24,6 +24,7 @@
 ## Recent signals
 
 - Authored "ODOO Implementation — Post-Mortem" (Google Drive, 2026-05-22).
+- Tom and Marta will run a cost post-mortem next week; you committed to settle with her on Monday whether she hands over how she ran the costs work or you provide the structure (Slack group DM, 2026-06-05).
 
 ## Communication style
 
@@ -36,4 +37,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Markéta` to prep.
+- Date: 2026-06-05
+- Channel: Slack (group DM)
+- Summary: Cost post-mortem handover to Tom + Marta discussed.
+- Follow-up: Align Monday on handover vs you structuring it (task-2026-06-08-07).

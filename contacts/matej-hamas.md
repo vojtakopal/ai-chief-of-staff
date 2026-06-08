@@ -22,6 +22,7 @@
 
 - Helped set up Snowflake key-pair authentication and Google SSO login (matej.hamas@apify.com).
 - Recurring DM thread on access/credentials configuration.
+- You enabled his Google SSO and set up DataGrip access via externalbrowser OAuth; confirmed working (Slack DM, 2026-06-04).
 
 ## Communication style
 
@@ -33,4 +34,7 @@
 
 ## Last interaction
 
-- Not yet logged.
+- Date: 2026-06-04
+- Channel: Slack DM
+- Summary: DataGrip / Snowflake access via Google SSO — resolved.
+- Follow-up: None.

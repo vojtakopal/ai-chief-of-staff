@@ -27,6 +27,9 @@
 
 - Re-ran datamart + Tableau; flagged data writers / HubSpot flow needing a fix (#data-alerts, 2026-02-26).
 - Switched `datasets` Snowflake extraction to the `modifiedAtHour` index for scalability (Slack, 2025-05).
+- Asked to move the recurring 1:1 from Tue to Wed 10:55-11:45 when he is in the office; you RSVP'd yes (Slack DM, 2026-06-08).
+- Business trip to Brno Jun 10-11, approved (BambooHR, 2026-06-05).
+- Planning a cost post-mortem with Marta next week; his first, so you'll provide the structure or arrange a Markéta handover (Slack, 2026-06-05).
 
 ## Communication style
 
@@ -39,4 +42,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Tom` to prep.
+- Date: 2026-06-08
+- Channel: Slack DM
+- Summary: Moved the recurring 1:1 to Wed 10:55-11:45; confirmed.
+- Follow-up: Give the cost post-mortem a structure or arrange Markéta's handover before he and Marta run it next week.

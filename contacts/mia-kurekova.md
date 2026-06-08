@@ -21,6 +21,7 @@
 ## Recent context (from Slack DMs, added 2026-06-05)
 
 - Reviewed Data Engineer candidates together (e.g. flagged Matúš Karahuta as relevant, others not).
+- Tagged you in Ashby to review Matúš Karahuta (culture + personality fit confirmed) and submitted feedback on Tibor Košťál for Data Engineer (Ashby, 2026-06-04).
 
 ## Communication style
 
@@ -33,4 +34,7 @@
 
 ## Last interaction
 
-- Not yet logged.
+- Date: 2026-06-04
+- Channel: Ashby
+- Summary: Candidate triage — Matúš Karahuta (reviewed) and Tibor Košťál feedback submitted.
+- Follow-up: Data engineer hiring sync with her Mon Jun 8, 15:00; hiring-manager call for Tibor Wed Jun 10, 10:00.
