@@ -7,7 +7,161 @@
 # Status: pending | in_progress | blocked | complete
 # Priority: 1 (urgent) | 2 (high) | 3 (normal) | 4 (low)
 
-tasks: []
+# Last reviewed across Slack / Gmail / Notion: 2026-06-08
+
+tasks:
+  - id: "task-2026-06-08-01"
+    title: "Complete BambooHR onboarding task for Tereza Novotná (Senior Data Scientist)"
+    description: >
+      Kristýna Eislerová assigned an onboarding task for the incoming Senior
+      Data Scientist (start location Lucerna, Prague). Closing this hire is a
+      stated Q3 goal — do not let the onboarding step stall.
+    status: "pending"
+    priority: 1
+    due_date: "2026-06-09"
+    goal_alignment: "hiring_and_ladder"
+    created: "2026-06-08"
+    notes: "Gmail, BambooHR notification 2026-06-08. The Senior DS goal is effectively closing."
+
+  - id: "task-2026-06-08-02"
+    title: "Approve Tomáš Omasta business trip Jun 10-11 (BambooHR)"
+    description: "Two-day business trip (Brno), no one else on the team out. Quick approve/deny in BambooHR."
+    status: "pending"
+    priority: 2
+    due_date: "2026-06-09"
+    goal_alignment: "apify_data_org"
+    created: "2026-06-08"
+    notes: "Gmail, BambooHR 2026-06-05. Tied to his request to move the 1:1 (see task-03)."
+
+  - id: "task-2026-06-08-03"
+    title: "Confirm Tomáš 1:1 moved to Wed Jun 10, 11:00"
+    description: >
+      Tomáš asked to shift the Tuesday 1:1 to Wednesday when he is in the
+      office; he already put 11:00 on the calendar. Confirm it back to him.
+    status: "pending"
+    priority: 2
+    due_date: "2026-06-09"
+    goal_alignment: "apify_data_org"
+    created: "2026-06-08"
+    notes: "Slack DM 2026-06-08. Needs a reply (do not auto-send)."
+
+  - id: "task-2026-06-08-04"
+    title: "Review candidate Matúš Karahuta in Ashby"
+    description: >
+      Mia Kureková tagged you: personality and culture fit confirmed, asking
+      for your review.
+    status: "pending"
+    priority: 2
+    due_date: "2026-06-10"
+    goal_alignment: "hiring_and_ladder"
+    created: "2026-06-08"
+    notes: "Gmail/Ashby mention 2026-06-04."
+
+  - id: "task-2026-06-08-05"
+    title: "Prep + attend hiring-manager call for Tibor Košťál (Data Engineer)"
+    description: >
+      Hiring-manager call Wed Jun 10, 10:00. Mia's feedback already submitted —
+      read it before the call.
+    status: "pending"
+    priority: 2
+    due_date: "2026-06-10"
+    goal_alignment: "hiring_and_ladder"
+    created: "2026-06-08"
+    notes: "Gmail/Ashby 2026-06-03. DE pipeline also has referrals from Hsin-Ying Tsai (Cameron Jellett) and your own (Peter Kolarovec)."
+
+  - id: "task-2026-06-08-06"
+    title: "Schedule Tableau renewal call with Salesforce; hold negotiation anchor"
+    description: >
+      Dominik Cap looped you in with the Salesforce rep (Uhlík) on the Tableau
+      renewal. Propose the online meeting. Anchor discipline: you already hold
+      25% off list; open at 40%, target ~35%, and only bundle with the Slack
+      renewal if it adds a discount. Push for an extra cut on a 2-year term.
+    status: "pending"
+    priority: 2
+    due_date: "2026-06-12"
+    goal_alignment: "mixpanel_governance"
+    created: "2026-06-08"
+    notes: "Gmail thread + Slack DM with Dominik 2026-06-04. Vendor cost governance. Do not silently drift anchor->target."
+
+  - id: "task-2026-06-08-07"
+    title: "Align with Markéta on cost post-mortem structure (handover to Tom + Marta)"
+    description: >
+      Tomáš and Martina will run a cost post-mortem next week. Neither has run
+      one before. Get Markéta to hand over how she ran the costs work, or
+      provide the structure yourself.
+    status: "pending"
+    priority: 3
+    due_date: "2026-06-12"
+    goal_alignment: "mixpanel_governance"
+    created: "2026-06-08"
+    notes: "Slack group DM 2026-06-05. You committed to settle this with Markéta on Monday."
+
+  - id: "task-2026-06-08-08"
+    title: "Configure 3rd-party actor cost allocation for Axesso invoices"
+    description: >
+      Martina's request: set Axesso supplier invoices to full amount,
+      cost_allocation_type = actor, cost_allocation = R8WeJwLuzLZ6g4Bkk
+      (junglee/amazon-reviews-scraper). Currently routing to product cost
+      centre as app&services. Keboola transformation / odoo_received_invoices.
+    status: "pending"
+    priority: 3
+    due_date: "2026-06-12"
+    goal_alignment: "mixpanel_governance"
+    created: "2026-06-08"
+    notes: "Slack DM from Martina 2026-06-04, with Keboola transformation link."
+
+  - id: "task-2026-06-08-09"
+    title: "Reply to Vit Tuhy re Snowflake connector usable in the cloud for agents/routines"
+    description: >
+      Vit's team relies heavily on Redash MCP and wants a Snowflake connector
+      that runs in the cloud so agents/routines can produce alerts and digests.
+      He asked whether anything is planned. This is adjacent to the AI-consumable
+      semantic-layer direction — answer with where it fits.
+    status: "pending"
+    priority: 3
+    due_date: "2026-06-09"
+    goal_alignment: "semantic_layer"
+    created: "2026-06-08"
+    notes: "Slack DM 2026-06-07. He said he'd follow up Monday."
+
+  - id: "task-2026-06-08-10"
+    title: "Prep for Marek call Fri Jun 12: AI enablement on data (Cortex AI), backups"
+    description: >
+      Marek wants to cover AI enablement around data (Cortex AI etc.) and
+      whether there are critical things to back up. Ties to Bára's Cortex vs
+      Claude evaluation for conversational analytics.
+    status: "pending"
+    priority: 3
+    due_date: "2026-06-12"
+    goal_alignment: "semantic_layer"
+    created: "2026-06-08"
+    notes: "Gmail invite 2026-06-04."
+
+  - id: "task-2026-06-08-11"
+    title: "Review Mixpanel session-replay overage against governance principle"
+    description: >
+      Mixpanel flags session-replay usage at ~142k vs the 20k free limit, with
+      an upgrade push. Check this against the post-signing principle that
+      Mixpanel cost growth stays slower than revenue growth before any upgrade.
+    status: "pending"
+    priority: 3
+    due_date: "2026-06-15"
+    goal_alignment: "mixpanel_governance"
+    created: "2026-06-08"
+    notes: "Gmail 2026-06-02 (sent to jaroslav). Bake into quarterly cost-vs-revenue review."
+
+  - id: "task-2026-06-08-12"
+    title: "Define Snowflake access/budget for Gokdeniz Kaymak"
+    description: >
+      Gokdeniz requested Snowflake access; you asked for the specific
+      privileges/grants and a budget/financial plan before provisioning, and
+      pointed him to draft the grants with Claude. Blocked on his response.
+    status: "blocked"
+    priority: 4
+    due_date: ""
+    goal_alignment: "mixpanel_governance"
+    created: "2026-06-08"
+    notes: "Slack DM 2026-06-04. Waiting on him for privileges + budget. Cost/governance impact."
 
 # Example task format:
 #
