@@ -8,6 +8,12 @@
 # Priority: 1 (urgent) | 2 (high) | 3 (normal) | 4 (low)
 
 # Last reviewed across Slack / Gmail / Notion: 2026-06-08
+#
+# Notion mirror (private workspace), synced manually both directions each session:
+#   parent page:  https://app.notion.com/p/379f39950a2281d99c48cb9ad1b65189
+#   Tasks database: https://app.notion.com/p/399d1cc7a38f4abcbdcfda69457e6ea8
+#   data source id: 94380b4a-92a4-4723-af38-8b98a4e76bfc
+# Sync key is the task `id` below <-> the "Task ID" column in Notion. They must match exactly.
 
 tasks:
   - id: "task-2026-06-08-01"
