@@ -1,0 +1,101 @@
+# Vojta's data team at Apify. Direct reports.
+# Used by chief-of-staff Claude to resolve names → handles, surface context for 1:1s,
+# and route activity queries.
+# Identities resolved via Slack + Notion on 2026-06-05. Individual contact files: contacts/<name>.md
+# current_focus / recent_topics are inferred from Notion/Slack signal — confirm and deepen in 1:1s.
+
+team:
+  - name: Jakub Rajský
+    short: Kuba
+    github: mr-rajce
+    slack: UJK91UK2L
+    email: jakub.rajsky@apify.com
+    timezone: Europe/Amsterdam
+    role: Senior Data Analyst II
+    current_focus: >
+      Website & digital analytics (product owner), marketing attribution
+      (ROI/ROAS first-click), Tableau/Redash reporting.
+    comms_style: TBD
+    recent_topics:
+      - website_digital_analytics
+      - marketing_attribution
+      - tableau_redash_reporting
+
+  - name: Matej Varkonda
+    github: matejvarkonda
+    slack: U05845E2RHP
+    email: matej.varkonda@apify.com
+    timezone: Europe/Belgrade
+    role: Data Analyst
+    current_focus: >
+      Not clearly surfaced in Notion/Slack — confirm in 1:1.
+      Most junior IC; career-ladder progression is a live topic.
+    comms_style: TBD
+    recent_topics:
+      - career_ladder_progression
+
+  - name: Markéta Trunkátová
+    github: mtrunkatova
+    slack: U034ZT9QEBF
+    email: marketa.trunkatova@apify.com
+    timezone: Europe/Belgrade
+    role: Senior Data Analyst II
+    current_focus: >
+      Finance / ERP analytics. Authored the Odoo implementation post-mortem;
+      works closely with Finance. Most tenured analyst (since ~2023).
+    comms_style: TBD
+    recent_topics:
+      - odoo_erp_implementation
+      - finance_analytics
+
+  - name: Tomáš Omasta
+    short: Tom
+    github: Omastto1
+    slack: U08BJ4VGW3E
+    email: tomas.omasta@apify.com
+    timezone: Europe/Belgrade
+    role: Senior Data Engineer I
+    current_focus: >
+      Primary data engineer. Snowflake extraction + datamart, dbt pipelines,
+      data writers (HubSpot flow), MongoDB scalability. Operates #data-alerts.
+    comms_style: TBD
+    recent_topics:
+      - snowflake_extraction
+      - datamart_pipelines
+      - data_alerts_ops
+
+  - name: Bára Čelechovská
+    short: Barca
+    github: BarCele
+    slack: U079ZF68LLF
+    email: barbora.celechovska@apify.com
+    timezone: Europe/Amsterdam
+    role: Senior Data Analyst I
+    current_focus: >
+      Conversational analytics prototype. Active evaluation of Snowflake Cortex
+      vs Claude. Built the AI-chatbot semantic layer now used outside the data team.
+    comms_style: TBD
+    recent_topics:
+      - conversational_analytics
+      - snowflake_cortex
+      - persona_segmentation
+
+  - name: Martina Gelnerová
+    short: Marta
+    github: MartinaGelnerova
+    slack: U0280MPNTDH
+    email: martina.gelnerova@apify.com
+    timezone: Europe/Belgrade
+    role: Senior Data Analyst I
+    current_focus: >
+      Data architecture growth path under review.
+      AE bar definition, dbt implementation plans, semantic layer stewardship.
+    comms_style: TBD
+    recent_topics:
+      - dbt_implementation_plans
+      - analytics_engineer_bar
+      - semantic_layer
+
+# Note: the "Jan" in the original scaffold is Jan Zeníšek (Zenda / Žeňďa), VP Product —
+# Vojta's MANAGER, not a report. He is not part of this team roster.
+# See his contact file: contacts/jan-zenisek.md

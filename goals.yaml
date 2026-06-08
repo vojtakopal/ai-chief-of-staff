@@ -1,58 +1,147 @@
-# Goals — Your Quarterly Objectives
-#
-# This file is the source of truth for "what should I be working on?"
-# Claude references it constantly when prioritizing your time,
-# triaging your inbox, and deciding what meetings to accept.
-#
-# Update quarterly. Review weekly.
-#
-# How to use:
-#   - Define 3-5 objectives (fewer is better)
-#   - Each objective should be specific, measurable, and time-bound
-#   - Include key results that define success
-#   - Update progress (0.0 to 1.0) as you make headway
-#   - Claude will flag when progress stalls
+# Vojta Kopal — 12-month goals (2026-Q2 through 2027-Q1)
+# Used by chief-of-staff Claude for prioritisation, calendar review, decision framing.
+# This is a draft scaffolded from context. Edit anything that does not reflect actual commitments.
 
-quarter: "Q1 2026"
-last_updated: "2026-01-01"
+horizon: 2026-Q2 through 2027-Q1
+last_reviewed: 2026-05-27
+review_cadence: monthly
 
-objectives:
-  - name: "Example: Launch new product feature"
-    target: "Ship to 100% of users by end of Q1"
-    priority: 1
-    key_results:
-      - "Feature spec complete by Jan 31"
-      - "Beta with 10 customers by Feb 28"
-      - "Full rollout by Mar 31"
-    progress: 0.0
-    status: "on_track"   # on_track | at_risk | behind | complete
-    notes: ""
+themes:
 
-  - name: "Example: Grow revenue 30%"
-    target: "$X pipeline by end of quarter"
-    priority: 2
-    key_results:
-      - "Hire 2 sales reps by Feb 15"
-      - "Launch outbound motion by Feb 28"
-      - "Close 5 new enterprise deals by Mar 31"
-    progress: 0.0
-    status: "on_track"
-    notes: ""
+  # Primary day-to-day weight. The work the team depends on.
+  apify_data_org:
+    weight: 50
+    description: >
+      Build Apify's data team into the function that makes AI-consumable insights
+      the default operating substrate of the company. Hold the organisational line
+      on the 12-month roadmap.
 
-  - name: "Example: Build high-performing team"
-    target: "Complete hiring plan and establish rituals"
-    priority: 3
-    key_results:
-      - "Fill 3 open roles by Feb 28"
-      - "Launch weekly team sync and monthly retrospective"
-      - "Complete first round of performance reviews"
-    progress: 0.0
-    status: "on_track"
-    notes: ""
+    goals:
+      - id: semantic_layer
+        title: Ship the unified, contract-tested, AI-consumable semantic layer
+        priority: 1
+        why: >
+          Prerequisite for every downstream pillar in the 12-month roadmap.
+          Without it, the four pillars (Trusted / Instant / Forward-looking /
+          Predictable) stay as parallel one-offs.
+        outcome: >
+          dbt semantic models plus conversational interface in production by
+          end of horizon, contract-tested in CI, consumed by GTM and Product
+          without analyst hand-holding.
+        success_criteria:
+          - All four pillars have a working slice on top of the semantic layer
+          - Conversational analytics prototype graduated to production (Barbora's stream)
+          - Zero unmediated dashboard requests for covered domains
+        risks:
+          - Stakeholder pressure to keep dashboard work alive (org risk, not technical)
+          - Reclaim phase not held under pressure
+        feasibility: 55-65%
 
-# Personal goals (optional — Claude respects work-life balance)
-personal:
-  - name: "Example: Exercise 4x per week"
-    progress: 0.0
-  - name: "Example: Read 12 books this year"
-    progress: 0.0
+      - id: reclaim_phase
+        title: Hold the 6-week Reclaim phase (iterations 10-12)
+        priority: 1
+        why: >
+          GitHub throughput data shows the team cannot absorb foundation work
+          while carrying current dashboard load. This is the binding constraint.
+        outcome: >
+          Cut-list defended, 1E policy adopted in writing, foundation work
+          begins on time.
+        success_criteria:
+          - Stakeholder pushback handled without scope creep
+          - Team commits to 1E policy
+          - Throughput stays at ~40 items / ~60 points per sprint
+
+      - id: hiring_and_ladder
+        title: Senior Data Scientist hired, LVL 7 defined on manager ladder
+        priority: 2
+        why: >
+          Team capacity for the roadmap requires the hire. LVL 7 must be defined
+          before the next review cycle or the manager track caps out below the
+          IC track.
+        outcome: >
+          Hire closed by Q3, LVL 7 draft submitted to People before next cycle.
+        success_criteria:
+          - Senior DS hire signed
+          - LVL 7 competency definitions accepted by People (Mews scope as reference)
+          - IC/manager parity mapped explicitly
+
+      - id: mixpanel_governance
+        title: Mixpanel cost growth stays slower than revenue growth
+        priority: 2
+        why: Governing principle from the contract negotiation. Must hold post-signing.
+        outcome: Quarterly cost-vs-revenue review baked into team operating cadence.
+
+  # External presence. Supports CTO track and Apify GTM.
+  external_presence:
+    weight: 25
+    description: >
+      Build audience and strategic positioning via writing, speaking, and
+      research contributions.
+
+    goals:
+      - id: us_mission
+        title: Land the US Mission contribution (Sep - Nov 2026)
+        priority: 1
+        outcome: >
+          Top 100 AI Builders in Bay Area report and State of AI Agents data
+          report published in time to back CFP submissions. At least one
+          accepted talk.
+        anchor_events:
+          - The AI Conference (Sep 29 - Oct 1)
+          - TechCrunch Disrupt (Oct 13-15)
+          - ODSC AI West (Oct 27-29)
+
+      - id: linkedin_authority
+        title: Build LinkedIn audience through narrative, direct writing
+        priority: 2
+        outcome: Consistent cadence, content grounded in real operational work.
+        principle: >
+          Content that emerges from real work is faster to write and more authentic.
+
+      - id: state_of_ai_agents
+        title: Finalise State of AI Agents report structure
+        priority: 2
+
+  # Optionality. Protected but not primary.
+  side_projects:
+    weight: 15
+    description: >
+      Long-horizon optionality. Worked on protected weekend or evening time,
+      not at the expense of primary themes.
+
+    ideas:
+      - recommendation_system_or_upsell_engine  # most concrete
+      - hospitality_analytics_product  # competing with OTA Insights
+      - data_and_ai_consulting_for_saas_startups
+      - open_source_baby_sleep_training_tool
+    naming_preference: .ai domains
+    decision_criterion: >
+      Pick ONE by end of Q3. Optionality is only valuable if it eventually closes.
+
+  # Non-negotiable.
+  family_and_personal:
+    weight: 10
+    description: Time with Alex and family is not a residual.
+
+    goals:
+      - id: protected_family_time
+        title: Evenings and weekends are family-default
+        rules:
+          - No work meetings after 17:30 unless pre-agreed
+          - Weekends free of laptop work unless explicitly chosen
+          - Calendar drift toward eroding this is a P1 flag
+
+      - id: health_and_recovery
+        title: Sustained pace, not heroic pace
+        signals_to_flag:
+          - Three or more late evenings in a row
+          - Skipped lunch breaks across a week
+          - Calendar booked past 80% for two consecutive weeks
+
+# Decision rules. Apply when scoring requests, calendar items, or tasks.
+decision_rules:
+  - When time allocation drifts more than 20% from theme weights over a rolling 4-week window, flag it.
+  - When a new request lands, score it against theme weights and surface the lowest-weight item it displaces.
+  - When organisational feasibility is the binding constraint (not technical), say so explicitly.
+  - Never silently drift from an opening anchor to a target. Flag deviation or restore the anchor.
+  - Prefer one strong recommendation over a list of options.
