@@ -22,47 +22,49 @@ tasks:
       Kristýna Eislerová assigned an onboarding task for the incoming Senior
       Data Scientist (start location Lucerna, Prague). Closing this hire is a
       stated Q3 goal — do not let the onboarding step stall.
-    status: "complete"
+    status: "pending"
     priority: 1
     due_date: "2026-06-09"
     goal_alignment: "hiring_and_ladder"
     created: "2026-06-08"
-    completed: "2026-06-08"
-    notes: "Gmail, BambooHR notification 2026-06-08. Senior DS hire onboarding step done 2026-06-08."
+    notes: "Gmail, BambooHR notification 2026-06-08. The Senior DS goal is effectively closing."
 
   - id: "task-2026-06-08-02"
     title: "Approve Tomáš Omasta business trip Jun 10-11 (BambooHR)"
     description: "Two-day business trip (Brno), no one else on the team out. Quick approve/deny in BambooHR."
-    status: "pending"
+    status: "complete"
     priority: 2
     due_date: "2026-06-09"
     goal_alignment: "apify_data_org"
     created: "2026-06-08"
-    notes: "Gmail, BambooHR 2026-06-05. Tied to his request to move the 1:1 (see task-03)."
+    completed: "2026-06-08"
+    notes: "Gmail, BambooHR 2026-06-05. Approved 2026-06-08."
 
   - id: "task-2026-06-08-03"
     title: "Confirm Tomáš 1:1 moved to Wed Jun 10, 11:00"
     description: >
       Tomáš asked to shift the Tuesday 1:1 to Wednesday when he is in the
       office; he already put 11:00 on the calendar. Confirm it back to him.
-    status: "pending"
+    status: "complete"
     priority: 2
     due_date: "2026-06-09"
     goal_alignment: "apify_data_org"
     created: "2026-06-08"
-    notes: "Slack DM 2026-06-08. Needs a reply (do not auto-send)."
+    completed: "2026-06-08"
+    notes: "Slack DM 2026-06-08. Confirmed - gave a thumbs up and RSVP'd yes."
 
   - id: "task-2026-06-08-04"
     title: "Review candidate Matúš Karahuta in Ashby"
     description: >
       Mia Kureková tagged you: personality and culture fit confirmed, asking
       for your review.
-    status: "pending"
+    status: "complete"
     priority: 2
     due_date: "2026-06-10"
     goal_alignment: "hiring_and_ladder"
     created: "2026-06-08"
-    notes: "Gmail/Ashby mention 2026-06-04."
+    completed: "2026-06-08"
+    notes: "Gmail/Ashby mention 2026-06-04. Reviewed 2026-06-08."
 
   - id: "task-2026-06-08-05"
     title: "Prep + attend hiring-manager call for Tibor Košťál (Data Engineer)"
