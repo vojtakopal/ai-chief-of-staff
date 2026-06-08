@@ -90,7 +90,7 @@ tasks:
     due_date: "2026-06-12"
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Sent 2026-06-08: proposed Mon 14:00, Wed 12:00-14:00, Thu 14:00-15:00 to Uhlik (Salesforce), cc Dominik; awaiting his pick. Renewal deadline 13.06. Heads-up: Wed slot overlaps the E&L workshop. Anchor: hold 25% floor, open ~40%, only bundle with Slack if it deepens the discount."
+    notes: "Booked Mon 8 Jun 14:00-14:30 (Salesforce/Tableau+Apify_renewal, Meet), cc Dominik. Three tentative holds released. Renewal deadline 13.06. Anchor: hold 25% floor, open ~40%, only bundle with Slack if it deepens the discount."
 
   - id: "task-2026-06-08-07"
     title: "Align with Markéta on cost post-mortem structure (handover to Tom + Marta)"
