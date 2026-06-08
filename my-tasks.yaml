@@ -85,12 +85,12 @@ tasks:
       renewal. Propose the online meeting. Anchor discipline: you already hold
       25% off list; open at 40%, target ~35%, and only bundle with the Slack
       renewal if it adds a discount. Push for an extra cut on a 2-year term.
-    status: "pending"
+    status: "in_progress"
     priority: 2
     due_date: "2026-06-12"
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Gmail thread + Slack DM with Dominik 2026-06-04. Vendor cost governance. Do not silently drift anchor->target."
+    notes: "Sent 2026-06-08: proposed Mon 14:00, Wed 12:00-14:00, Thu 14:00-15:00 to Uhlik (Salesforce), cc Dominik; awaiting his pick. Renewal deadline 13.06. Heads-up: Wed slot overlaps the E&L workshop. Anchor: hold 25% floor, open ~40%, only bundle with Slack if it deepens the discount."
 
   - id: "task-2026-06-08-07"
     title: "Align with Markéta on cost post-mortem structure (handover to Tom + Marta)"
