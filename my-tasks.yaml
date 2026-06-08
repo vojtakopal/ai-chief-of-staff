@@ -126,12 +126,13 @@ tasks:
       that runs in the cloud so agents/routines can produce alerts and digests.
       He asked whether anything is planned. This is adjacent to the AI-consumable
       semantic-layer direction — answer with where it fits.
-    status: "pending"
+    status: "complete"
     priority: 3
     due_date: "2026-06-09"
     goal_alignment: "semantic_layer"
     created: "2026-06-08"
-    notes: "Slack DM 2026-06-07. He said he'd follow up Monday."
+    completed: "2026-06-08"
+    notes: "Slack DM 2026-06-07. Replied 2026-06-08: asked Vit for use cases / examples / dashboards-queries; will review Redash telemetry then run a joint session to set it up. Ball now with Vit."
 
   - id: "task-2026-06-08-10"
     title: "Prep for Marek call Fri Jun 12: AI enablement on data (Cortex AI), backups"
