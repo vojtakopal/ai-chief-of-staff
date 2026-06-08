@@ -13,6 +13,15 @@ BLUE='\033[0;34m'
 BOLD='\033[1m'
 NC='\033[0m' # No Color
 
+# Detect whether we have a terminal to prompt against. When run as a
+# session-start / setup script there is no TTY, so we skip the interactive
+# prompts and install files non-interactively. Values can still be supplied
+# via environment variables (USER_NAME, WORK_EMAIL, etc.).
+INTERACTIVE=1
+if [ ! -t 0 ]; then
+    INTERACTIVE=0
+fi
+
 echo ""
 echo -e "${BOLD}============================================${NC}"
 echo -e "${BOLD}   AI Chief of Staff — Setup${NC}"
@@ -27,35 +36,44 @@ if ! command -v claude &> /dev/null; then
     echo -e "${YELLOW}Warning: Claude Code CLI not found.${NC}"
     echo "Install it from: https://docs.anthropic.com/en/docs/claude-code"
     echo ""
-    read -p "Continue anyway? (y/n) " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        exit 1
+    if [ "$INTERACTIVE" = "1" ]; then
+        read -p "Continue anyway? (y/n) " -n 1 -r
+        echo
+        if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+            exit 1
+        fi
     fi
 fi
 
-# Gather user info
-echo -e "${BLUE}Let's personalize your setup.${NC}"
-echo ""
+# Gather user info (interactive only). Non-interactive runs use environment
+# variables where provided and fall back to leaving placeholders untouched.
+if [ "$INTERACTIVE" = "1" ]; then
+    echo -e "${BLUE}Let's personalize your setup.${NC}"
+    echo ""
 
-read -p "Your full name: " USER_NAME
-read -p "Your first name (for email sign-offs): " FIRST_NAME
-read -p "Your role/title: " USER_ROLE
-read -p "Your company: " USER_COMPANY
-read -p "Work email: " WORK_EMAIL
-read -p "Personal email: " PERSONAL_EMAIL
-read -p "Company website (e.g., example.com): " COMPANY_URL
+    read -p "Your full name: " USER_NAME
+    read -p "Your first name (for email sign-offs): " FIRST_NAME
+    read -p "Your role/title: " USER_ROLE
+    read -p "Your company: " USER_COMPANY
+    read -p "Work email: " WORK_EMAIL
+    read -p "Personal email: " PERSONAL_EMAIL
+    read -p "Company website (e.g., example.com): " COMPANY_URL
 
-echo ""
-echo -e "${BLUE}Time constraints (leave blank to skip):${NC}"
-read -p "Home by what time? (e.g., 6:00 PM): " DINNER_TIME
-read -p "Earliest meeting time? (e.g., 9:00 AM): " EARLIEST_MEETING
+    echo ""
+    echo -e "${BLUE}Time constraints (leave blank to skip):${NC}"
+    read -p "Home by what time? (e.g., 6:00 PM): " DINNER_TIME
+    read -p "Earliest meeting time? (e.g., 9:00 AM): " EARLIEST_MEETING
 
-echo ""
-echo -e "${BLUE}Preferences:${NC}"
-read -p "Currency (USD/CAD/EUR/GBP): " CURRENCY
+    echo ""
+    echo -e "${BLUE}Preferences:${NC}"
+    read -p "Currency (USD/CAD/EUR/GBP): " CURRENCY
+    read -p "Timezone (e.g., America/New_York): " TIMEZONE
+else
+    echo -e "${BLUE}No terminal detected - installing non-interactively.${NC}"
+    echo ""
+fi
+
 CURRENCY=${CURRENCY:-USD}
-read -p "Timezone (e.g., America/New_York): " TIMEZONE
 TIMEZONE=${TIMEZONE:-America/New_York}
 
 # Create directory structure
