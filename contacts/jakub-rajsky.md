@@ -33,6 +33,7 @@
 - Handles recurring GDPR / data-subject lookups across Segment/Mixpanel/GA (#legal-tasks) - operational toil worth systematising.
 - Registered into DAMA Czech via Vojta (2026-06-08). Back from a Sweden event.
 - Recurring ask across recent 1:1s: hasn't been through the career ladder; wants 2026 goals and help prioritising what's worth working on.
+- 1:1 2026-06-09: agreed to wire Mailgun transactional emails into Segment (`mail_sent` events; evaluating Snowpipe Streaming); build Segment Audiences → Google/LinkedIn Ads and Intercom tags → Segment (call with Segment booked, lunch with Radovan from Marketing); give Growthbook a proper Snowflake table/view interface to stop adhoc datamart queries; and support DE hiring (take-home assignment, Apify GitHub).
 
 ## Communication style
 
@@ -46,6 +47,6 @@
 ## Last interaction
 
 - Date: 2026-06-09
-- Channel: 1:1 (+ Slack)
-- Summary: 1:1 held; recent threads on AI-chat attribution and GDPR lookups.
-- Follow-up: You owe the career-ladder + 2026-goals conversation. Open retro commitments: Growthbook→Snowflake walkthrough; move Segment to end of orchestration (#12); Funnel IO alerts to a separate channel.
+- Channel: 1:1
+- Summary: Technical agenda - AI-chat attribution, Mailgun→Segment, Segment audiences, the Growthbook Snowflake-view interface, DE hiring. Career ladder did not come up.
+- Follow-up: You still owe the career-ladder + 2026-goals conversation - carry it to next time. Open retro items: Segment to end of orchestration (#12); Funnel IO alerts to a separate channel.

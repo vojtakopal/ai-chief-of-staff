@@ -41,5 +41,5 @@
 
 - Date: 2026-06-09
 - Channel: 1:1 (back from holiday)
-- Summary: 1:1 held; her agenda item was buddy for Tereza (new Senior DS).
+- Summary: 1:1 held (back from holiday); agenda was buddy for Tereza (new Senior DS), the cost post-mortem, and datamart/DM tables.
 - Follow-up: Finance-pipeline single point of failure - push for a runbook + structural many2one handling. Cost post-mortem handover to Tom + Marta (task-2026-06-08-07).
