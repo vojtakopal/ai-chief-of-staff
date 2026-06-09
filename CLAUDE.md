@@ -57,6 +57,7 @@ When pulling work or activity by team member, use the GitHub handle.
 - **Productivity stack:** Notion, Slack (#data-alerts is C033WA4R0SK), Gmail (`vojtech.kopal@apify.com`), Google Calendar (Europe/Prague).
 - **Code:** GitHub org `apify`, data team board is project #42.
 - **My Notion user ID:** `2c0d872b-594c-81a6-b11d-0002cdbaee97` — filter searches with this when scoping to my content.
+- **Daily Journal (Notion):** database `2edf3995-0a22-80df-8e22-000b259ac157`, one page per day titled `Daily YYYY-MM-DD`. Keep an eye on it. Maintain the **Accomplishments** and **Tomorrow's Goals** fields from the day's work; leave **Mood**, **Gratitude**, **Challenges**, and the body notes to me unless I ask.
 
 ## Tool quirks learned the hard way
 
