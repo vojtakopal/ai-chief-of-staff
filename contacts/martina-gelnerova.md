@@ -30,6 +30,7 @@
 - apify_data_querying_notes — Snowflake/Cortex access patterns (Google Drive, 2026-05-13).
 - Requested 3rd-party actor cost allocation for Axesso invoices (cost_allocation_type = actor, cost_allocation = R8WeJwLuzLZ6g4Bkk, junglee/amazon-reviews-scraper) via a Keboola transformation (Slack DM, 2026-06-04).
 - Pairing with Tom on a cost post-mortem next week (Slack, 2026-06-05).
+- Growth path crystallising as data-modeling ownership via dbt; you planned a dbt intro for her (daily notes, 2026-05-26 and 2026-06-08). Now also joining the Creators Group syncs (Creators offsite, 2026-05-21).
 
 ## Communication style
 

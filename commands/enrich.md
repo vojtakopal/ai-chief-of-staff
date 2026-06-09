@@ -24,6 +24,8 @@ Scan connected channels for recent interactions and update contact files.
    - Slack: DMs and mentions involving known contacts
    - WhatsApp/iMessage: Recent messages with known contacts
    - Calendar: Meetings that occurred with known contacts
+   - Notion — Daily Journal: scan recent daily entries (database `2edf3995-0a22-80df-8e22-000b259ac157`) for people mentions, work/growth facts, and commitments
+   - Notion — 1:1 notes: scan each report's 1:1 page (under the "1:1s" page) for new agenda items, decisions, and follow-ups since last enrichment
 
 2. **For each interaction found:**
    - Look up the contact file in `~/.claude/contacts/`
@@ -83,7 +85,7 @@ Check which contacts are overdue for engagement based on their tier.
 Deep enrichment of a specific contact.
 
 1. **Find the contact file** in `~/.claude/contacts/`
-2. **Scan all channels** for recent mentions/interactions with this person
+2. **Scan all channels** for recent mentions/interactions with this person, including their Notion 1:1 notes page and any mentions in the Daily Journal
 3. **Update the file** with:
    - Latest interaction details
    - Any new context from conversations
@@ -160,6 +162,7 @@ When a new contact is suggested, create using this template:
 - Always include dates when adding notes (e.g., "Enjoys hiking (added 2026-01-18)")
 - Don't over-enrich. Only add genuinely useful context, not filler.
 - When scanning channels, respect privacy — don't surface private/sensitive content in contact notes.
+- Daily Journal and 1:1 notes: extract only work and development facts (projects, growth path, commitments, who they met). Never copy Mood, Gratitude, personal reflections, or sensitive 1:1 topics (therapy, compensation, probation, health) into contact files.
 - Tier assignments should reflect actual relationship importance, not aspirational importance.
 - Stale contact alerts are suggestions, not demands. Some relationships naturally ebb and flow.
 - Focus enrichment on contacts that are actually useful for the user's goals.

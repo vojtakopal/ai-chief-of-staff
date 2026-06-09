@@ -28,6 +28,7 @@
 - Profile/review notes credit cross-team semantic-layer-for-chatbots adoption (Notion, 2026-03-03).
 - Persona segmentation analysis using run sources and engagement metrics (Notion monthly summary, 2026-03).
 - ChatGPT vs Snowflake evaluation notes — connectivity and reliability tradeoffs (Notion, 2025-06).
+- Weighing MCP vs API as the access pattern for the conversational-analytics layer (data sync, 2026-05-25).
 
 ## Communication style
 

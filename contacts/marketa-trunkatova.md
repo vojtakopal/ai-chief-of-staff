@@ -27,6 +27,7 @@
 - Tom and Marta will run a cost post-mortem next week; you committed to settle with her on Monday whether she hands over how she ran the costs work or you provide the structure (Slack group DM, 2026-06-05).
 - Recurring Odoo breakages when fields flip to many2one (partner_id, country_id) break the output extracts; she manually deletes fields and reruns, and defaults to hopping on a call rather than a written fix (Slack DM, 2026-05-30). Single-person dependency on the finance pipeline.
 - On holiday from ~30 May; reran flows and covered alerts from her phone before leaving.
+- Owns the StoreDev payroll-cost allocation: store devs moved under "coc engineering" in Odoo, so she pulls their payrolls from the accounting journal via company_id; also running the UMPL→UDPL revenue-model migration and moving the flexibee pull from daily to weekly (daily notes, 2026-05-28).
 
 ## Communication style
 
