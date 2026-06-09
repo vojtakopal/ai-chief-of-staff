@@ -28,6 +28,11 @@
 
 - Set up Redash dashboards for the actorization campaign so queries can be linked (Slack, 2025-12-02).
 - Final feedback round on the Organic Social Tableau dashboard before go-live (Notion, 2026-03-10).
+- Working Growthbook-Snowflake integration, Mixpanel Actor Clusters, and fraud-detection groundwork; wants to level up Claude usage (skills, agents, project structure) (1:1 notes, 2026-05-26).
+- Scoping AI-chat attribution: Growth team wants Actor runs + activation-funnel steps attributed to website AI-chat interactions; checking if it's wired in Console/Mongo (#data-team-internal, 2026-06-08; Tom pointed to llmChatTraces).
+- Handles recurring GDPR / data-subject lookups across Segment/Mixpanel/GA (#legal-tasks) - operational toil worth systematising.
+- Registered into DAMA Czech via Vojta (2026-06-08). Back from a Sweden event.
+- Recurring ask across recent 1:1s: hasn't been through the career ladder; wants 2026 goals and help prioritising what's worth working on.
 
 ## Communication style
 
@@ -40,4 +45,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Kuba` to prep.
+- Date: 2026-06-09
+- Channel: 1:1 (+ Slack)
+- Summary: 1:1 held; recent threads on AI-chat attribution and GDPR lookups.
+- Follow-up: You owe the career-ladder + 2026-goals conversation. Open retro commitments: Growthbook→Snowflake walkthrough; move Segment to end of orchestration (#12); Funnel IO alerts to a separate channel.

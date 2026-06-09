@@ -9,7 +9,7 @@
 | Relationship | Cross-functional — people operations |
 | Tier | 2 |
 | Email | laura.bockorova@apify.com |
-| Slack | TBD |
+| Slack | U071RGWRYGG |
 | Timezone | Europe/Prague |
 
 ## Why he matters
@@ -31,6 +31,13 @@
 - LVL 7 ladder definition and where People needs to sign off.
 - Onboarding logistics for the next data hire.
 
+## Recent context (Slack, 2026-06-09)
+
+- Brief thanks on Slack, likely tied to the Senior DS (Tereza Novotná) onboarding now in progress.
+
 ## Last interaction
 
-- Not yet logged.
+- Date: 2026-06-09
+- Channel: Slack DM
+- Summary: Short thanks exchange.
+- Follow-up: LVL 7 ladder sign-off; onboarding logistics for Tereza Novotná.

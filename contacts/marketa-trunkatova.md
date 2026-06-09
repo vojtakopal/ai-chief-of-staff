@@ -25,6 +25,8 @@
 
 - Authored "ODOO Implementation — Post-Mortem" (Google Drive, 2026-05-22).
 - Tom and Marta will run a cost post-mortem next week; you committed to settle with her on Monday whether she hands over how she ran the costs work or you provide the structure (Slack group DM, 2026-06-05).
+- Recurring Odoo breakages when fields flip to many2one (partner_id, country_id) break the output extracts; she manually deletes fields and reruns, and defaults to hopping on a call rather than a written fix (Slack DM, 2026-05-30). Single-person dependency on the finance pipeline.
+- On holiday from ~30 May; reran flows and covered alerts from her phone before leaving.
 
 ## Communication style
 
@@ -37,7 +39,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-05
-- Channel: Slack (group DM)
-- Summary: Cost post-mortem handover to Tom + Marta discussed.
-- Follow-up: Align Monday on handover vs you structuring it (task-2026-06-08-07).
+- Date: 2026-06-09
+- Channel: 1:1 (back from holiday)
+- Summary: 1:1 held; her agenda item was buddy for Tereza (new Senior DS).
+- Follow-up: Finance-pipeline single point of failure - push for a runbook + structural many2one handling. Cost post-mortem handover to Tom + Marta (task-2026-06-08-07).
