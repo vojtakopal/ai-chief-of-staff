@@ -23,6 +23,7 @@
 - Pinged for help in #apify-request-access on data access.
 - Posted us-mission week notes (conferences, AgentCon) — relevant to CFP/talk targets.
 - Set a call for Fri Jun 12, 11:30 to cover AI enablement on data (Cortex AI) and whether anything critical needs backing up (Gmail invite, 2026-06-04).
+- On parental leave from ~2026-06-11 (new baby - "úspěšně odrozeno"); cancelled the Jun 12 Cortex/backups call while clearing his calendar (task-2026-06-08-10 now moot).
 
 ## Communication style
 
@@ -35,7 +36,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-04
+- Date: 2026-06-11
 - Channel: Calendar / Gmail
-- Summary: Scheduled a Jun 12 call on Cortex AI enablement and backups.
-- Follow-up: Prep talking points tying Cortex enablement to Bára's Cortex vs Claude evaluation (task-2026-06-08-10).
+- Summary: Cancelled the Jun 12 Cortex/backups call - on parental leave (new baby).
+- Follow-up: Send congratulations when appropriate (do not send without approval). Re-book the Cortex enablement / backups conversation once he's back.

@@ -34,6 +34,7 @@
 - Registered into DAMA Czech via Vojta (2026-06-08). Back from a Sweden event.
 - Recurring ask across recent 1:1s: hasn't been through the career ladder; wants 2026 goals and help prioritising what's worth working on.
 - 1:1 2026-06-09: agreed to wire Mailgun transactional emails into Segment (`mail_sent` events; evaluating Snowpipe Streaming); build Segment Audiences → Google/LinkedIn Ads and Intercom tags → Segment (call with Segment booked, lunch with Radovan from Marketing); give Growthbook a proper Snowflake table/view interface to stop adhoc datamart queries; and support DE hiring (take-home assignment, Apify GitHub).
+- Took a last-minute holiday, flying out 2026-06-12 ~04:00; rescheduling his meetings and items. OOO from 2026-06-12 (Slack DM, 2026-06-11).
 
 ## Communication style
 
@@ -49,4 +50,4 @@
 - Date: 2026-06-09
 - Channel: 1:1
 - Summary: Technical agenda - AI-chat attribution, Mailgun→Segment, Segment audiences, the Growthbook Snowflake-view interface, DE hiring. Career ladder did not come up.
-- Follow-up: You still owe the career-ladder + 2026-goals conversation - carry it to next time. Open retro items: Segment to end of orchestration (#12); Funnel IO alerts to a separate channel.
+- Follow-up: You still owe the career-ladder + 2026-goals conversation - carry it to next time. Open retro items: Segment to end of orchestration (#12); Funnel IO alerts to a separate channel. Note: OOO on holiday from 2026-06-12, items on hold until he's back.

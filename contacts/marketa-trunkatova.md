@@ -28,6 +28,7 @@
 - Recurring Odoo breakages when fields flip to many2one (partner_id, country_id) break the output extracts; she manually deletes fields and reruns, and defaults to hopping on a call rather than a written fix (Slack DM, 2026-05-30). Single-person dependency on the finance pipeline.
 - On holiday from ~30 May; reran flows and covered alerts from her phone before leaving.
 - Owns the StoreDev payroll-cost allocation: store devs moved under "coc engineering" in Odoo, so she pulls their payrolls from the accounting journal via company_id; also running the UMPL→UDPL revenue-model migration and moving the flexibee pull from daily to weekly (daily notes, 2026-05-28).
+- Out on medical leave from 2026-06-11, timing uncertain; declined her recurring 1:1, the data-team bi-weekly, and her Jul 3 study day. Set up a new Mon Jun 15 16:00 finance sync before stepping out. Her finance-pipeline single point of failure is now a live coverage risk.
 
 ## Communication style
 
@@ -40,7 +41,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-09
-- Channel: 1:1 (back from holiday)
-- Summary: 1:1 held (back from holiday); agenda was buddy for Tereza (new Senior DS), the cost post-mortem, and datamart/DM tables.
-- Follow-up: Finance-pipeline single point of failure - push for a runbook + structural many2one handling. Cost post-mortem handover to Tom + Marta (task-2026-06-08-07).
+- Date: 2026-06-11
+- Channel: Slack DM
+- Summary: Let you know she's out for a medical matter and won't make the team lunch; timing uncertain.
+- Follow-up: Arrange Tom/Martina coverage for the StoreDev/Odoo finance pipeline (don't ping her while she's out). Cost post-mortem handover still open (task-2026-06-08-07). New finance sync booked Mon Jun 15 16:00 - may move depending on her return.

@@ -33,6 +33,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-08 (scheduled)
-- Channel: In person - dinner at Sia, Prague (with Garrett)
-- Follow-up needed: Use the dinner to advance the Cortex/semantic-layer eval and read the cost trajectory.
+- Date: 2026-06-11
+- Channel: Slack DM
+- Summary: Post-event debrief (dbt + AI workshop / Thoughtspot demo). You noted the in-person meet was the highlight; didn't stay for the hands-on and weren't the target audience for the talks. Dinner was 2026-06-08 at Sia with Garrett.
+- Follow-up needed: Continue the Cortex / semantic-layer thread; she expects to be back in Prague.
