@@ -17,9 +17,10 @@
 
 - Direct report on the Apify data team. Most junior analyst on the team (only non-"Senior" IC) — career-ladder progression is a live topic.
 
-## Current focus (added 2026-06-05)
+## Current focus (added 2026-06-05; updated 2026-06-15)
 
-- Not clearly surfaced in Notion/Slack. Confirm current project ownership in next 1:1.
+- Owns the recurring PMM ↔ Data sync with Karin Příbylová - marketing / PMM analytics collaboration.
+- Datamart KPI reporting: added columns to `kpi_datamart` and worked Tableau extract refresh issues with Tom (#data-alerts, 2026-06-10).
 
 ## Recent signals
 
@@ -36,4 +37,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Matej` to prep.
+- Date: 2026-06-10
+- Channel: Slack (#data-alerts)
+- Summary: Worked the Tableau extract / `kpi_datamart` column issue with Tom.
+- Follow-up: PMM x Data sync today (Mon 15 Jun, 14:30). Confirm his current ownership and LVL path in the next 1:1.
