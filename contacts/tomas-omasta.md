@@ -30,6 +30,8 @@
 - Asked to move the recurring 1:1 from Tue to Wed 10:55-11:45 when he is in the office; you RSVP'd yes (Slack DM, 2026-06-08).
 - Business trip to Brno Jun 10-11, approved (BambooHR, 2026-06-05).
 - Planning a cost post-mortem with Marta next week; his first, so you'll provide the structure or arrange a Markéta handover (Slack, 2026-06-05).
+- Deep in the actor_inputs pipeline with you - S3 inputs extractor, `dm_actor_inputs` incremental vs full load, a `CREATE OR REPLACE` bug to truncate/regenerate (Slack DM, 2026-06-22).
+- Wrote up Matúš Karahuta's DE evaluation for #hiring-data-engineer-2026 (2026-06-22).
 
 ## Communication style
 
@@ -42,7 +44,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-08
+- Date: 2026-06-22
 - Channel: Slack DM
-- Summary: Moved the recurring 1:1 to Wed 10:55-11:45; confirmed.
-- Follow-up: Give the cost post-mortem a structure or arrange Markéta's handover before he and Marta run it next week.
+- Summary: Working through the actor_inputs pipeline design (extraction scope, incremental vs full load, dedup / primary keys).
+- Follow-up: 1:1 today (Tue 23 Jun, 14:10). Land the actor_inputs changes; cost post-mortem structure still open.

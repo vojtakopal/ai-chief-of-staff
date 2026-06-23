@@ -22,6 +22,7 @@
 
 - Reviewed Data Engineer candidates together (e.g. flagged Matúš Karahuta as relevant, others not).
 - Tagged you in Ashby to review Matúš Karahuta (culture + personality fit confirmed) and submitted feedback on Tibor Košťál for Data Engineer (Ashby, 2026-06-04).
+- June DE pipeline: Matúš Karahuta evaluated (Tom wrote it up); Jana Barková interviewed strong (BigQuery/Airflow, production AI tooling; gaps in dbt + Snowflake) - you agreed to push her forward; Peter Kolarovec hiring-manager call Fri 26 Jun 15:30 (moved from the 25th).
 
 ## Communication style
 
@@ -34,7 +35,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-04
-- Channel: Ashby
-- Summary: Candidate triage — Matúš Karahuta (reviewed) and Tibor Košťál feedback submitted.
-- Follow-up: Data engineer hiring sync with her Mon Jun 8, 15:00; hiring-manager call for Tibor Wed Jun 10, 10:00.
+- Date: 2026-06-22
+- Channel: Slack DM
+- Summary: Aligning the DE pipeline - Jana Barková (push forward), Matúš evaluation, Peter Kolarovec call Friday.
+- Follow-up: DE sync today (Tue 23 Jun, 11:00) to converge candidates; her regular sync deferred until you're back in the office.
