@@ -33,7 +33,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-11
-- Channel: Slack DM
-- Summary: Post-event debrief (dbt + AI workshop / Thoughtspot demo). You noted the in-person meet was the highlight; didn't stay for the hands-on and weren't the target audience for the talks. Dinner was 2026-06-08 at Sia with Garrett.
-- Follow-up needed: Continue the Cortex / semantic-layer thread; she expects to be back in Prague.
+- Date: 2026-06-25
+- Channel: Calendar invite + email
+- Summary: Sent an updated invite for the monthly Apify <> Snowflake status call (Thu 25 Jun 14:00-14:30) to stay aligned on projects and use cases. Tereza Novotná now added as an attendee - first time the new DS is in the Snowflake loop.
+- Follow-up needed: Run the monthly call today; carry the Cortex / semantic-layer evaluation and the cost-trajectory line. Bring Tereza in on the retention-vs-recurring-revenue context.

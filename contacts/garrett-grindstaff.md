@@ -33,7 +33,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-08 (scheduled)
-- Channel: In person (dinner, Sia Prague)
-- Summary: Snowflake relationship dinner with Aleksandra Nalewajek's account team.
-- Follow-up: Use it to advance the Cortex / semantic-layer evaluation and read the cost trajectory.
+- Date: 2026-06-24
+- Channel: Meeting (Snowflake sync, with Natalia Lekh)
+- Summary: He set up a Snowflake sync Wed 24 Jun 10:30 to walk through partnership-activation next steps - high-level needs with him and Natalia Lekh, then specifics. Tied to closing out the Snowflake partnership.
+- Follow-up: Land the partnership-activation steps; keep the Cortex / semantic-layer evaluation and cost trajectory in view. Aleksandra's monthly status call is 25 Jun.

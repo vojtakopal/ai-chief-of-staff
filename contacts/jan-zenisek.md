@@ -36,4 +36,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Zenda` to prep.
+- Date: 2026-06-24
+- Channel: 1:1 (Jan / Vojta sync, 10:00-11:00)
+- Summary: Recurring weekly sync. Open threads in his orbit: Tableau renewal invoice 38107530 (he forwarded it 12 Jun, you replied "řeším", Salesforce came to the office 24 Jun); eNPS Product results circulating (Simona Liptáková shared the deck + data, working lunch 25 Jun); DE hiring flurry; Tereza started as first DS.
+- Follow-up needed: Get the LVL 7 / DS-track ladder definition committed with a date - highest-leverage managing-up item. Lock his explicit backing for the Reclaim phase (iterations 10-12) before stakeholder pressure lands. Surface the falling sprint throughput proactively.

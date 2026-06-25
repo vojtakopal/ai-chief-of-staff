@@ -32,6 +32,7 @@
 - Planning a cost post-mortem with Marta next week; his first, so you'll provide the structure or arrange a Markéta handover (Slack, 2026-06-05).
 - Deep in the actor_inputs pipeline with you - S3 inputs extractor, `dm_actor_inputs` incremental vs full load, a `CREATE OR REPLACE` bug to truncate/regenerate (Slack DM, 2026-06-22).
 - Wrote up Matúš Karahuta's DE evaluation for #hiring-data-engineer-2026 (2026-06-22).
+- You set up a "Vojta / Tom - Matus's Test" session Thu 25 Jun 15:30 to review Matúš Karahuta's DE take-home together; he accepted (Calendar, 2026-06-25).
 
 ## Communication style
 
@@ -44,7 +45,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-22
-- Channel: Slack DM
-- Summary: Working through the actor_inputs pipeline design (extraction scope, incremental vs full load, dedup / primary keys).
-- Follow-up: 1:1 today (Tue 23 Jun, 14:10). Land the actor_inputs changes; cost post-mortem structure still open.
+- Date: 2026-06-25
+- Channel: Calendar
+- Summary: Reviewing Matúš Karahuta's DE take-home together (15:30 session). DE hiring is the live thread alongside the actor_inputs pipeline work.
+- Follow-up: Close out the Matúš evaluation; land the actor_inputs changes; cost post-mortem structure still open.

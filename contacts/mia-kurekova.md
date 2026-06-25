@@ -35,7 +35,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-22
-- Channel: Slack DM
-- Summary: Aligning the DE pipeline - Jana Barková (push forward), Matúš evaluation, Peter Kolarovec call Friday.
-- Follow-up: DE sync today (Tue 23 Jun, 11:00) to converge candidates; her regular sync deferred until you're back in the office.
+- Date: 2026-06-24
+- Channel: Ashby (notifications) + calendar
+- Summary: DE pipeline running hot. Feedback submitted on Martin Janda and Adam Koláček (both DE); she mentioned you on Jakub Hettler (leaning reject - role likely too small for him, he agreed); hiring-manager call with Martin Janda booked Wed 1 Jul 13:30. Your own DE interviews: Tomas Buckley (24 Jun 13:30) and Togi Hanilec (25 Jun 14:30).
+- Follow-up: Submit your outstanding Ashby feedback (Matúš Karahuta, Tomas Buckley). Peter Kolarovec hiring-manager call Fri 26 Jun 15:30. Keep the Senior DS pipeline moving in parallel with the DE flurry.

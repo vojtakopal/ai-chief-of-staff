@@ -38,6 +38,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-08
-- Channel: Email + calendar
-- Follow-up needed: Renewal call booked today 14:00-14:30 (Meet). Hold the anchor.
+- Date: 2026-06-24
+- Channel: In person (Apify office) + email
+- Summary: Salesforce + Apify get-together at the office Wed 24 Jun 15:00-16:00 (Uhlík + Srovinský + Behnke from Salesforce, Dominik Čáp from Apify). He emailed ahead that they were ~15 min late by taxi. Came to present a Tableau + Slack combined option.
+- Follow-up needed: Veronika Fečková (Salesforce) emailed 24 Jun proposing a follow-up call on the Tableau + Slack combination; decide whether to take it. Regina (finance) is chasing the Tableau invoice 38107530 approval - tie off the renewal terms before approving. Hold the anchor.

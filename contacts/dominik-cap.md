@@ -31,6 +31,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-08
-- Channel: Slack DM
-- Follow-up needed: Report back after today's Salesforce call.
+- Date: 2026-06-24
+- Channel: In person (Apify office)
+- Summary: Joined the Salesforce + Apify get-together at the office Wed 24 Jun 15:00 with Uhlík's team on the Tableau + Slack combined option.
+- Follow-up needed: Align with him on the combined Tableau + Slack outcome before approving the Tableau invoice 38107530; loop him on the Salesforce follow-up call Fečková proposed.
