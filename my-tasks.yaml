@@ -7,7 +7,9 @@
 # Status: pending | in_progress | blocked | complete
 # Priority: 1 (urgent) | 2 (high) | 3 (normal) | 4 (low)
 
-# Last reviewed across Slack / Gmail / Notion: 2026-06-08
+# Last reviewed across Slack / Gmail / Notion: 2026-06-25
+# Reconciliation rule: every status change carries its evidence and as-of date in notes.
+#   Only mark complete with evidence. Lacking evidence, keep open and tag "VERIFY".
 #
 # Notion mirror (private workspace), synced manually both directions each session:
 #   parent page:  https://app.notion.com/p/379f39950a2281d99c48cb9ad1b65189
@@ -22,12 +24,13 @@ tasks:
       Kristýna Eislerová assigned an onboarding task for the incoming Senior
       Data Scientist (start location Lucerna, Prague). Closing this hire is a
       stated Q3 goal — do not let the onboarding step stall.
-    status: "pending"
+    status: "complete"
     priority: 1
     due_date: "2026-06-09"
     goal_alignment: "hiring_and_ladder"
     created: "2026-06-08"
-    notes: "Gmail, BambooHR notification 2026-06-08. The Senior DS goal is effectively closing."
+    completed: "2026-06-15"
+    notes: "Gmail, BambooHR notification 2026-06-08. Reconciled 2026-06-25: Tereza started 2026-06-15 as first DS, onboarding plan built in Notion and she is active (added to Snowflake monthly call). Treating onboarding step as done."
 
   - id: "task-2026-06-08-02"
     title: "Approve Tomáš Omasta business trip Jun 10-11 (BambooHR)"
@@ -71,12 +74,13 @@ tasks:
     description: >
       Hiring-manager call Wed Jun 10, 10:00. Mia's feedback already submitted —
       read it before the call.
-    status: "pending"
+    status: "complete"
     priority: 2
     due_date: "2026-06-10"
     goal_alignment: "hiring_and_ladder"
     created: "2026-06-08"
-    notes: "Gmail/Ashby 2026-06-03. DE pipeline also has referrals from Hsin-Ying Tsai (Cameron Jellett) and your own (Peter Kolarovec)."
+    completed: "2026-06-10"
+    notes: "Gmail/Ashby 2026-06-03. Reconciled 2026-06-25: scheduled call date (Jun 10) has passed and the DE pipeline has moved well past Tibor (Matúš, Jana, Martin Janda, Buckley, Hanilec, Kolarovec, Koláček all in flight). Marking the call done; outcome not logged - VERIFY if you need Tibor's disposition."
 
   - id: "task-2026-06-08-06"
     title: "Schedule Tableau renewal call with Salesforce; hold negotiation anchor"
@@ -90,7 +94,7 @@ tasks:
     due_date: "2026-06-12"
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Booked Mon 8 Jun 14:00-14:30 (Salesforce/Tableau+Apify_renewal, Meet), cc Dominik. Three tentative holds released. Renewal deadline 13.06. Anchor: hold 25% floor, open ~40%, only bundle with Slack if it deepens the discount."
+    notes: "Booked Mon 8 Jun (Meet), cc Dominik. Reconciled 2026-06-25: still in_progress. Salesforce (Uhlík + team, Dominik) came to the office 24 Jun to pitch a combined Tableau + Slack option; Veronika Fečková proposing a follow-up call; Regina chasing approval of invoice 38107530. Hold the anchor (25% floor) and do not approve the invoice until the renewal terms are settled."
 
   - id: "task-2026-06-08-07"
     title: "Align with Markéta on cost post-mortem structure (handover to Tom + Marta)"
@@ -103,7 +107,7 @@ tasks:
     due_date: "2026-06-12"
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Slack group DM 2026-06-05. You committed to settle this with Markéta on Monday."
+    notes: "Slack group DM 2026-06-05. Reconciled 2026-06-25: OVERDUE (due 12 Jun) and still open - Tom's contact file notes the cost post-mortem structure is unresolved as of 25 Jun. Close it with Markéta's handover or provide the structure."
 
   - id: "task-2026-06-08-08"
     title: "Configure 3rd-party actor cost allocation for Axesso invoices"
@@ -117,7 +121,7 @@ tasks:
     due_date: "2026-06-12"
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Slack DM from Martina 2026-06-04, with Keboola transformation link."
+    notes: "Slack DM from Martina 2026-06-04, with Keboola transformation link. Reconciled 2026-06-25: OVERDUE (due 12 Jun) and unverified. Andrej confirmed reclassifying 3rd-party per-actor invoices to 518111 Cost of Revenue on 12 Jun, which may or may not be this same Axesso cost_allocation config - VERIFY before closing."
 
   - id: "task-2026-06-08-09"
     title: "Reply to Vit Tuhy re Snowflake connector usable in the cloud for agents/routines"
@@ -126,13 +130,21 @@ tasks:
       that runs in the cloud so agents/routines can produce alerts and digests.
       He asked whether anything is planned. This is adjacent to the AI-consumable
       semantic-layer direction — answer with where it fits.
-    status: "complete"
-    priority: 3
-    due_date: "2026-06-09"
+    status: "in_progress"
+    priority: 2
+    due_date: "2026-06-26"
     goal_alignment: "semantic_layer"
     created: "2026-06-08"
-    completed: "2026-06-08"
-    notes: "Slack DM 2026-06-07. Replied 2026-06-08: asked Vit for use cases / examples / dashboards-queries; will review Redash telemetry then run a joint session to set it up. Ball now with Vit."
+    notes: >
+      Slack DM 2026-06-07. REOPENED 2026-06-25 (was wrongly marked complete with
+      "ball now with Vit"). The ball is with Vojta: on 8 Jun you asked Vit for use
+      cases/queries and promised to review Redash telemetry then run a joint session.
+      He delivered the same day (commercial-side: invoices, better-plan offers,
+      overage, actor/run unit prices; 5 Redash queries) and has since chased twice
+      (18 Jun, 25 Jun) with no reply for 17 days. Next: reply today, onboard his team
+      to Snowflake Intelligence early access (interactive, ready), book the joint
+      session, and park cloud-runnable agents/routines on the roadmap (depends on the
+      org Claude skill + MCP-in-cloud + network lockdown). Priority bumped 3->2."
 
   - id: "task-2026-06-08-10"
     title: "Prep for Marek call Fri Jun 12: AI enablement on data (Cortex AI), backups"
@@ -140,12 +152,13 @@ tasks:
       Marek wants to cover AI enablement around data (Cortex AI etc.) and
       whether there are critical things to back up. Ties to Bára's Cortex vs
       Claude evaluation for conversational analytics.
-    status: "pending"
+    status: "complete"
     priority: 3
     due_date: "2026-06-12"
     goal_alignment: "semantic_layer"
     created: "2026-06-08"
-    notes: "Gmail invite 2026-06-04."
+    completed: "2026-06-12"
+    notes: "Gmail invite 2026-06-04. Reconciled 2026-06-25: the Fri 12 Jun call with Marek on AI enablement over Snowflake is referenced as confirmed in Slack (10 Jun DM with Dominik). Marking done; specific backup decisions not logged - VERIFY if a backup action item is outstanding."
 
   - id: "task-2026-06-08-11"
     title: "Review Mixpanel session-replay overage against governance principle"
@@ -158,7 +171,7 @@ tasks:
     due_date: "2026-06-15"
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Gmail 2026-06-02 (sent to jaroslav). Bake into quarterly cost-vs-revenue review."
+    notes: "Gmail 2026-06-02 (sent to jaroslav). Reconciled 2026-06-25: OVERDUE (due 15 Jun) and still open. No decision logged on the session-replay overage vs the governance principle. Resolve before any Mixpanel upgrade."
 
   - id: "task-2026-06-08-12"
     title: "Define Snowflake access/budget for Gokdeniz Kaymak"
@@ -171,7 +184,7 @@ tasks:
     due_date: ""
     goal_alignment: "mixpanel_governance"
     created: "2026-06-08"
-    notes: "Slack DM 2026-06-04. Waiting on him for privileges + budget. Cost/governance impact."
+    notes: "Slack DM 2026-06-04. Reconciled 2026-06-25: still blocked on Gokdeniz (privileges + budget). 22 days with no response - consider closing as won't-do or pinging him once more, then drop."
 
 # Example task format:
 #
