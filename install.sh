@@ -182,24 +182,32 @@ install_gh() {
 install_gh
 export PATH="$HOME/.local/bin:$PATH"
 
-# gh reads GH_TOKEN / GITHUB_TOKEN from the environment natively.
+# gh reads GH_TOKEN / GITHUB_TOKEN from the environment natively. Note: in the
+# Claude Code web environment, outbound GitHub traffic is gated through the Claude
+# GitHub App and the GraphQL API is blocked by the egress proxy. Projects v2 (#42)
+# is GraphQL-only, so the live dump only works OUTSIDE the web env (local gh / CI).
+# Here we attempt it, and fall back to a committed snapshot at data/p42.json.
 GH_TOK="${GH_TOKEN:-${GITHUB_TOKEN:-}}"
-if command -v gh >/dev/null 2>&1 && [ -n "$GH_TOK" ]; then
-    if gh auth status >/dev/null 2>&1; then
-        mkdir -p "$CLAUDE_DIR/data"
-        if bash "$SCRIPT_DIR/scripts/gh-project42-dump.sh" \
-            > "$CLAUDE_DIR/data/p42.json" 2>"$CLAUDE_DIR/data/p42.err"; then
-            echo "  Project #42 dumped to ~/.claude/data/p42.json"
-        else
-            echo -e "  ${YELLOW}Project #42 dump failed${NC} (see ~/.claude/data/p42.err)."
-            echo "    The token likely needs SSO authorisation for the apify org +"
-            echo "    scopes read:project, read:org, repo."
-        fi
-    else
-        echo -e "  ${YELLOW}gh present but not authenticated.${NC} Check GH_TOKEN scopes / SSO."
-    fi
+mkdir -p "$CLAUDE_DIR/data"
+if command -v gh >/dev/null 2>&1 && [ -n "$GH_TOK" ] && \
+   bash "$SCRIPT_DIR/scripts/gh-project42-dump.sh" \
+     > "$CLAUDE_DIR/data/p42.json" 2>"$CLAUDE_DIR/data/p42.err"; then
+    echo "  Project #42 dumped live to ~/.claude/data/p42.json"
 else
-    echo "  Skipping #42 dump (gh missing or GH_TOKEN not set)."
+    rm -f "$CLAUDE_DIR/data/p42.json"
+    if grep -qi 'graphql proxying\|not enabled for this session' "$CLAUDE_DIR/data/p42.err" 2>/dev/null; then
+        echo -e "  ${YELLOW}Live #42 dump blocked by the egress proxy${NC} (GitHub GraphQL"
+        echo "    disabled / REST gated via the Claude GitHub App). Expected in web sessions."
+    else
+        echo -e "  ${YELLOW}Live #42 dump unavailable${NC} (see ~/.claude/data/p42.err)."
+    fi
+    if [ -s "$SCRIPT_DIR/data/p42.json" ]; then
+        cp "$SCRIPT_DIR/data/p42.json" "$CLAUDE_DIR/data/p42.json"
+        echo "    Using committed snapshot data/p42.json (refresh it from local gh / CI)."
+    else
+        echo "    No committed snapshot at data/p42.json yet - /1on1 and /weekly-retro"
+        echo "    will note #42 is unavailable until one is added."
+    fi
 fi
 
 set -e
