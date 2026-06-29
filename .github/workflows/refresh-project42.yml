@@ -1,0 +1,59 @@
+name: Refresh project #42 snapshot
+
+# Project #42 (apify org, Projects v2) is GraphQL-only and cannot be fetched from
+# the Claude Code web session — that environment's egress proxy blocks the GitHub
+# GraphQL API. This Action runs in a normal GitHub runner where GraphQL works,
+# dumps the board, and commits the result to data/p42.json so /1on1 and
+# /weekly-retro can read a fresh snapshot.
+#
+# REQUIRED SECRET: PROJECT42_TOKEN
+#   A classic personal access token with scopes: read:project, read:org, repo,
+#   SSO-authorised for the apify org. The default GITHUB_TOKEN cannot read another
+#   org's Projects v2, so a PAT is required.
+#   Add at: repo Settings -> Secrets and variables -> Actions -> New repository secret.
+
+on:
+  workflow_dispatch: {}        # run on request (Actions tab, gh CLI, or the GitHub MCP)
+  schedule:
+    - cron: "0 6 * * 1"        # weekly safety net, Mondays 06:00 UTC — remove if unwanted
+
+permissions:
+  contents: write              # allow committing the refreshed snapshot
+
+concurrency:
+  group: refresh-project42
+  cancel-in-progress: false
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dump project #42 to data/p42.json
+        env:
+          GH_TOKEN: ${{ secrets.PROJECT42_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::error::PROJECT42_TOKEN is not set. Add a classic PAT (read:project, read:org, repo; SSO-authorised for apify)."
+            exit 1
+          fi
+          mkdir -p data
+          # gh api graphql --paginate emits one JSON object per page; jq -c streams
+          # them to one compact object per line (JSONL), which the consumers read.
+          bash scripts/gh-project42-dump.sh | jq -c . > data/p42.json
+          echo "Wrote $(wc -l < data/p42.json) page(s), $(wc -c < data/p42.json) bytes to data/p42.json"
+
+      - name: Commit snapshot if it changed
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/p42.json
+          if git diff --staged --quiet; then
+            echo "No change in data/p42.json — nothing to commit."
+          else
+            git commit -m "chore: refresh project #42 snapshot [skip ci]"
+            git push
+          fi
