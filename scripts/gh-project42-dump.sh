@@ -10,7 +10,8 @@
 #   bash scripts/gh-project42-dump.sh > p42.json
 #
 # Fields pulled per item: Status, Size, Iteration, Team (single-select / number /
-# iteration) plus the linked Issue/PR number, title, state, closedAt.
+# iteration) plus the linked Issue/PR number, title, state, closedAt, and assignees
+# (logins) - assignees enable /1on1 per-person "what's on their plate".
 
 set -euo pipefail
 
@@ -30,8 +31,8 @@ query($org:String!, $number:Int!, $endCursor:String){
           }}
           content{
             __typename
-            ... on Issue{ number title state closedAt }
-            ... on PullRequest{ number title state closedAt }
+            ... on Issue{ number title state closedAt assignees(first:10){ nodes{ login } } }
+            ... on PullRequest{ number title state closedAt assignees(first:10){ nodes{ login } } }
           }
         }
       }
