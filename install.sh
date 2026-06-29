@@ -142,6 +142,68 @@ for cmd in "$SCRIPT_DIR/commands/"*.md; do
     fi
 done
 
+# ---------------------------------------------------------------------------
+# GitHub CLI + project #42 access
+#
+# The data team board (apify org, Projects v2 #42) is only reachable via the gh
+# GraphQL API. The container is ephemeral, so install gh and dump #42 on every
+# startup. Everything here is best-effort: a failure must never abort setup, so
+# each step is guarded and set -e is relaxed for this block.
+# ---------------------------------------------------------------------------
+echo ""
+echo -e "${GREEN}Setting up GitHub CLI + project #42...${NC}"
+set +e
+
+install_gh() {
+    command -v gh >/dev/null 2>&1 && return 0
+    local arch ver tmp
+    case "$(uname -m)" in
+        x86_64|amd64) arch=amd64 ;;
+        aarch64|arm64) arch=arm64 ;;
+        *) echo "  Unsupported arch $(uname -m); skipping gh install"; return 1 ;;
+    esac
+    # Resolve the latest tag via the redirect (avoids the rate-limited releases API).
+    ver=$(curl -fsSL -o /dev/null -w '%{url_effective}' \
+        https://github.com/cli/cli/releases/latest 2>/dev/null | sed 's#.*/tag/v##')
+    [ -z "$ver" ] && { echo "  Could not resolve gh version; skipping"; return 1; }
+    tmp=$(mktemp -d)
+    if curl -fsSL "https://github.com/cli/cli/releases/download/v${ver}/gh_${ver}_linux_${arch}.tar.gz" \
+        -o "$tmp/gh.tar.gz" 2>/dev/null && tar -xzf "$tmp/gh.tar.gz" -C "$tmp" 2>/dev/null; then
+        mkdir -p "$HOME/.local/bin"
+        cp "$tmp"/gh_*/bin/gh "$HOME/.local/bin/gh" && echo "  Installed gh v${ver} to ~/.local/bin"
+    else
+        echo "  gh download failed; skipping"
+    fi
+    rm -rf "$tmp"
+    export PATH="$HOME/.local/bin:$PATH"
+    command -v gh >/dev/null 2>&1
+}
+
+install_gh
+export PATH="$HOME/.local/bin:$PATH"
+
+# gh reads GH_TOKEN / GITHUB_TOKEN from the environment natively.
+GH_TOK="${GH_TOKEN:-${GITHUB_TOKEN:-}}"
+if command -v gh >/dev/null 2>&1 && [ -n "$GH_TOK" ]; then
+    if gh auth status >/dev/null 2>&1; then
+        mkdir -p "$CLAUDE_DIR/data"
+        if bash "$SCRIPT_DIR/scripts/gh-project42-dump.sh" \
+            > "$CLAUDE_DIR/data/p42.json" 2>"$CLAUDE_DIR/data/p42.err"; then
+            echo "  Project #42 dumped to ~/.claude/data/p42.json"
+        else
+            echo -e "  ${YELLOW}Project #42 dump failed${NC} (see ~/.claude/data/p42.err)."
+            echo "    The token likely needs SSO authorisation for the apify org +"
+            echo "    scopes read:project, read:org, repo."
+        fi
+    else
+        echo -e "  ${YELLOW}gh present but not authenticated.${NC} Check GH_TOKEN scopes / SSO."
+    fi
+else
+    echo "  Skipping #42 dump (gh missing or GH_TOKEN not set)."
+fi
+
+set -e
+
 # Summary
 echo ""
 echo -e "${BOLD}============================================${NC}"
