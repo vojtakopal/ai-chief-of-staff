@@ -13,7 +13,10 @@ name: Refresh project #42 snapshot
 #   Add at: repo Settings -> Secrets and variables -> Actions -> New repository secret.
 
 on:
-  workflow_dispatch: {}        # run on request (Actions tab, gh CLI, or the GitHub MCP)
+  workflow_dispatch: {}        # manual run from the Actions tab
+  push:
+    paths:
+      - ".github/p42-refresh-request"   # on-request trigger: touch this file + push to run
   schedule:
     - cron: "0 6 * * 1"        # weekly safety net, Mondays 06:00 UTC — remove if unwanted
 
