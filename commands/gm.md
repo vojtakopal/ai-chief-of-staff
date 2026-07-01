@@ -20,6 +20,16 @@ A single mobile-readable briefing in this exact order:
 - For each 1:1 today, surface the report's recent GitHub activity and last retro commitments in one line.
 - Cross-reference everything against `goals.yaml` themes and weights.
 
+### Interview auto-prep (when interviews are on today's calendar)
+
+If today's calendar has any interview (organiser is the Talent Acquisition Calendar, or the title contains "Interview" / "Hiring manager" / a candidate name), draft one guide page per interview so I can walk in prepared:
+
+- Parent it under today's Daily Journal page (`Daily YYYY-MM-DD`, database `2edf3995-0a22-80df-8e22-000b259ac157`). Find that day's page; if it does not exist yet, note it in the briefing rather than inventing one.
+- Title the page `Interview <Candidate>`. Match the existing hiring-manager format (see "Interview Petr", 2026-06-30) exactly - six timed sections: 1) Opening & warm-up, 2) Experience deep-dive, 3) Working style & culture fit (Comfort with ambiguity / Prioritization / Humility & learning), 4) Apify intro & role pitch, 5) Candidate's questions, 6) Wrap-up & next steps - plus a Verdict block to fill after.
+- Keep the standard Apify pitch blurb verbatim: "Apify platform & Actors, data complexity (usage-based billing, 19k+ Actors, multiple pricing models), data team (6 → 10+, first data scientist), stack (Snowflake, Keboola, Redash, Mixpanel, Segment, HubSpot), 1/3/6 month milestones."
+- Tailor section 2's prompts to the role: Data Engineer → pipelines/orchestration, dbt (incremental, SCD2), Snowflake, ingestion/reverse-ETL, data quality, hiring task = dbt; Data Scientist/Analyst → modelling, experimentation, stakeholder translation, the retention-vs-recurring-revenue framing.
+- These are drafts in my own Notion - create them without asking, but do not send anything to the candidate or anyone else. Surface the page link under the meeting in the calendar section with `→ prep (guide drafted)`.
+
 ## Format rules
 
 - Total length under 300 words.
