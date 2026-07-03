@@ -4,7 +4,7 @@ I'm [Mike Murchison](https://linkedin.com/in/mikemurchison), CEO of [Ada](https:
 
 A lot of people have been asking about the setup — at the Claude Code meetup, in conversations with other CEOs, and across our team at Ada where we've been building AI-native operations into how we run the company. So I'm open-sourcing it for you to try, adapt, and improve.
 
-This repo gives you the same foundation. Your context, your goals, your voice.
+This repo gives you the same foundation. Your context, your goals, your voice. Random change.
 
 Watch the walkthrough and demo [here](https://x.com/mimurchison/status/2022368529417224480)
 
