@@ -135,7 +135,7 @@ copy_if_missing "$SCRIPT_DIR/schedules.yaml" "$CLAUDE_DIR/schedules.yaml"
 copy_if_missing "$SCRIPT_DIR/contacts/example-contact.md" "$CLAUDE_DIR/contacts/example-contact.md"
 
 # Copy commands
-for cmd in "$SCRIPT_DIR/commands/"*.md; do
+for cmd in "$SCRIPT_DIR/.claude/commands/"*.md; do
     if [ -f "$cmd" ]; then
         filename=$(basename "$cmd")
         copy_if_missing "$cmd" "$CLAUDE_DIR/commands/$filename"

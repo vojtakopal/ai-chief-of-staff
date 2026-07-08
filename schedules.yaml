@@ -18,7 +18,7 @@ schedules:
     cron: "30 7 * * *"        # interpret in Europe/Prague (05:30 UTC summer / 06:30 UTC winter)
     timezone: "Europe/Prague"
     enabled: true
-    notes: "Full briefing with calendar, tasks, and urgent items. Time matches the 07:30 run in commands/gm.md."
+    notes: "Full briefing with calendar, tasks, and urgent items. Time matches the 07:30 run in .claude/commands/gm.md."
 
   - name: "Midday Triage"
     skill: "/triage"
