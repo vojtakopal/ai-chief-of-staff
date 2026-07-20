@@ -36,7 +36,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-24
-- Channel: 1:1 (Jan / Vojta sync, 10:00-11:00)
-- Summary: Recurring weekly sync. Open threads in his orbit: Tableau renewal invoice 38107530 (he forwarded it 12 Jun, you replied "řeším", Salesforce came to the office 24 Jun); eNPS Product results circulating (Simona Liptáková shared the deck + data, working lunch 25 Jun); DE hiring flurry; Tereza started as first DS.
-- Follow-up needed: Get the LVL 7 / DS-track ladder definition committed with a date - highest-leverage managing-up item. Lock his explicit backing for the Reclaim phase (iterations 10-12) before stakeholder pressure lands. Surface the falling sprint throughput proactively.
+- Date: 2026-07-20
+- Channel: 1:1 (11:00) + Design-Data-Product-Store sync (11:40)
+- Summary: Weekly sync, followed by the product-store sync (Zuzka, Filip Cicvarek, Zdenek Kuncar). Data-side topics brought: definition-drift mechanism for product changes (third incident this half), fraud model live with enforcement gated on T&S, 50k Actors metrics delivered, payout-deduction wording risk.
+- Follow-up needed: LVL 7 / DS-track ladder definition still needs a committed date. DE offer decision this week - confirm his sign-off path. L4 comp band closure with People (Simona) feeds it.

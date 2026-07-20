@@ -45,7 +45,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-25
-- Channel: Calendar
-- Summary: Reviewing Matúš Karahuta's DE take-home together (15:30 session). DE hiring is the live thread alongside the actor_inputs pipeline work.
-- Follow-up: Close out the Matúš evaluation; land the actor_inputs changes; cost post-mortem structure still open.
+- Date: 2026-07-16
+- Channel: Slack (#data-team-internal)
+- Summary: Shipped the MongoDB extractor migration (native -> python extractor filtering the versions field, with table backup) cleanly; purged stale Snowflake accounts/workspaces after final warning. Carried alerts duty gaps during Bara/Kuba absences ("v kombajnu" Fri). Sat on Jana Barkova on-site (16 Jul) and DE HM calls.
+- Follow-up: 1:1 Tue 21 Jul 14:10. DE offer decision conversation - needs your Ashby scorecards in first. AWS savings plan is his Iteration 13 commitment - status check. Cost post-mortem structure still open (carried since June).

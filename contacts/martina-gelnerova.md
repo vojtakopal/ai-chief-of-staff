@@ -44,7 +44,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-04
-- Channel: Slack DM
-- Summary: Axesso actor cost-allocation setup request (Keboola transformation).
-- Follow-up: Configure the allocation (task-2026-06-08-08).
+- Date: 2026-07-10
+- Channel: Slack (#data-team-internal)
+- Summary: Pre-vacation handoff: flagged new PROXY_UNBLOCKER_UNITS in platform service usage to Tom (parse on actor_run + billing question); she configures after her return. On vacation since 11 Jul.
+- Follow-up: Back this week - 1:1 Tue 21 Jul 15:20. Reopen: #530 Creators KPI definition closure, #626 multi-tenant standby (pipeline fields merged 10 Jul, dashboard exposure waits for her), PROXY_UNBLOCKER_UNITS configuration. Growth-path conversation was deferred until after vacation - name a date.

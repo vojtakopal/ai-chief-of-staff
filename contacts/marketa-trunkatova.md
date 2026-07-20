@@ -41,7 +41,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-11
-- Channel: Slack DM
-- Summary: Flagged a Thursday-morning medical appointment (back the same day); wouldn't make that day's lunch.
-- Follow-up: Buddy for Tereza's onboarding from Mon Jun 15. Cost post-mortem handover still open (task-2026-06-08-07). Finance sync booked Mon Jun 15 16:00.
+- Date: 2026-07-16
+- Channel: Slack (via Tom's cleanup post)
+- Summary: Back from vacation (~13 Jul, welcomed at sync); cleaned up her old Tableau workbooks as part of the workspace purge. Had #data-alerts duty week of 6-13 Jul.
+- Follow-up: 1:1 Tue 21 Jul 8:30 - first since her return; check how Tereza's onboarding buddy role is going and close the cost post-mortem handover thread (open since June).

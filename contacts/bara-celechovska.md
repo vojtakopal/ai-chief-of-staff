@@ -42,4 +42,7 @@
 
 ## Last interaction
 
-- Not yet logged. Run `/1on1 Barca` to prep.
+- Date: 2026-07-15
+- Channel: Slack (#data-team-internal)
+- Summary: Pre-OOO handoff (off Thu-Fri, Colors of Ostrava): asked for alerts coverage, took a colleague's duty until Wed in trade. Week's highlights: shipped the Integrations - Stats dashboard overhaul (External/Internal taxonomy, n8n parsing fix, MCP split out; announced 10 Jul), raised the proactive-contact gap on product changes (13 Jul) which fed the definition-drift mechanism ask to product.
+- Follow-up: Back today (Mon 20 Jul). Iteration 13 scope was cut before OOO - confirm the 3 keepers (#168 semantic-layer validation, #669, #442). HubSpot handover package once DE hire lands. Career-ladder misalignment conversation still open.

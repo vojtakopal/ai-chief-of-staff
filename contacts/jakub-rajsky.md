@@ -48,7 +48,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-09
-- Channel: 1:1
-- Summary: Technical agenda - AI-chat attribution, Mailgun→Segment, Segment audiences, the Growthbook Snowflake-view interface, DE hiring. Career ladder did not come up.
-- Follow-up: 1:1 today (Tue 23 Jun, 13:00) - you still owe the career-ladder + 2026-goals conversation; carry it now. Open retro items: Segment to end of orchestration (#12); Funnel IO alerts to a separate channel.
+- Date: 2026-07-17
+- Channel: Working session (Segment Mapping, 3h)
+- Summary: Segment tracking-plan mapping ahead of the vendor talks. He booked the Twilio/Segment API usage & pricing call (Wed 22 Jul 15:00) - overage avoidance + CDP-vs-product-analytics architecture on the agenda. Prior week: fraud detection model shipped live and self-serve (31k leads, 89.4% precision CONFIRMED tier) - his standout delivery this half; drove the 50k Actors metrics under deadline; back from week off today (Mon 20 Jul: OOO, declined sync).
+- Follow-up: Career-ladder + 2026-goals conversation STILL owed (third carry). Enforcement gate on fraud model: nothing auto-blocks without T&S sign-off - he floated Mongo write-back that could auto-block; keep the gate explicit. Spot-check ask on validation dashboard outstanding.
