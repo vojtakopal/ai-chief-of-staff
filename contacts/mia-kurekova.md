@@ -35,7 +35,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-24
-- Channel: Ashby (notifications) + calendar
-- Summary: DE pipeline running hot. Feedback submitted on Martin Janda and Adam Koláček (both DE); she mentioned you on Jakub Hettler (leaning reject - role likely too small for him, he agreed); hiring-manager call with Martin Janda booked Wed 1 Jul 13:30. Your own DE interviews: Tomas Buckley (24 Jun 13:30) and Togi Hanilec (25 Jun 14:30).
-- Follow-up: Submit your outstanding Ashby feedback (Matúš Karahuta, Tomas Buckley). Peter Kolarovec hiring-manager call Fri 26 Jun 15:30. Keep the Senior DS pipeline moving in parallel with the DE flurry.
+- Date: 2026-07-27
+- Channel: Slack DM
+- Summary: Coordinating on a hiring decision - you told her the team has a 10:00 sync today and will confirm after. DE pipeline is at decision stage after two weeks of interviews (Kolarovec, Shpilkin, Kren, Korchagin, Cháb, Jana Barková, Matúš, Anthony Bartik).
+- Follow-up: Confirm the DE decision to her post-sync. Clear any remaining Ashby scorecards. Zuzka (Junior DA) onboarding underway; keep Senior DS track visible.

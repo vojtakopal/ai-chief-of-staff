@@ -32,7 +32,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-25
+- Date: 2026-07-27
 - Channel: Slack DM
-- Summary: Vit has chased three times and the ball is firmly with you. On 8 Jun you asked for his use cases, examples, and queries and promised to review Redash telemetry then run a joint session. He delivered the same day (commercial-side: chasing invoices, better-plan offers, overage, actor/run unit prices) with 5 Redash query examples (charts.apify.com q1492, 1258, 2102, 1481, 2115). He then pinged 18 Jun ("pujde s tim neco udelat?") and 25 Jun ("nemel jsi cas na me?"). No reply from you in 17 days.
-- Follow-up needed: Reply and book the joint session (overdue). Decouple his two asks - interactive AI data access (onboard now to Snowflake Intelligence early access) vs cloud-runnable agents/routines for alerts/digests (roadmap, tied to the org Claude skill + MCP-in-cloud + network lockdown).
+- Summary: Loop finally closed - you sent him the updated apify-analyst skill with the actor-task area added, and asked him to try the onboarding. This resolves the 17-day-overdue thread from June. He's now effectively an early adopter of the Snowflake Cortex / apify-analyst rollout.
+- Follow-up: Walk him through the setup on a call; confirm the commercial-side use cases (invoice chasing, better-plan offers, overage, unit prices) are served by the agent. His second ask - cloud-runnable agents for alerts/digests - is still roadmap.

@@ -48,7 +48,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-17
-- Channel: Working session (Segment Mapping, 3h)
-- Summary: Segment tracking-plan mapping ahead of the vendor talks. He booked the Twilio/Segment API usage & pricing call (Wed 22 Jul 15:00) - overage avoidance + CDP-vs-product-analytics architecture on the agenda. Prior week: fraud detection model shipped live and self-serve (31k leads, 89.4% precision CONFIRMED tier) - his standout delivery this half; drove the 50k Actors metrics under deadline; back from week off today (Mon 20 Jul: OOO, declined sync).
-- Follow-up: Career-ladder + 2026-goals conversation STILL owed (third carry). Enforcement gate on fraud model: nothing auto-blocks without T&S sign-off - he floated Mongo write-back that could auto-block; keep the gate explicit. Spot-check ask on validation dashboard outstanding.
+- Date: 2026-07-27
+- Channel: Slack DM
+- Summary: Back from vacation. Planning a 1-3pm sync with you on Segment next steps and event-marketing next steps (you'll tee up event marketing at the team sync, then go deeper together). Prior fortnight: fraud model shipped live/self-serve, Segment mapping session, 50k Actors metrics.
+- Follow-up: Career-ladder + 2026-goals conversation STILL owed (fourth carry now). Segment vendor decision (API-calls vs MTU model) feeding into the Twilio pricing talks. Fraud enforcement stays gated on T&S sign-off.
