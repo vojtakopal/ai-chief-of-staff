@@ -4,7 +4,7 @@ Run at 07:30 Europe/Prague before I open my laptop.
 
 ## What to produce
 
-A single mobile-readable briefing in this exact order:
+A single mobile-readable briefing, shown in chat and saved to today's Daily Journal (see "Save the briefing to the Daily Journal" below), in this exact order:
 
 1. **TL;DR** — one sentence on the day's shape: heavy / normal / light, and why.
 2. **Today's calendar** — meetings only. Flag the 2-3 that need actual prep with `→ prep`.
@@ -33,6 +33,16 @@ If today's calendar has any interview (organiser is the Talent Acquisition Calen
 - Keep the standard Apify pitch blurb verbatim: "Apify platform & Actors, data complexity (usage-based billing, 19k+ Actors, multiple pricing models), data team (6 → 10+, first data scientist), stack (Snowflake, Keboola, Redash, Mixpanel, Segment, HubSpot), 1/3/6 month milestones."
 - Tailor section 2's prompts to the role: Data Engineer → pipelines/orchestration, dbt (incremental, SCD2), Snowflake, ingestion/reverse-ETL, data quality, hiring task = dbt; Data Scientist/Analyst → modelling, experimentation, stakeholder translation, the retention-vs-recurring-revenue framing.
 - These are drafts in my own Notion - create them without asking, but do not send anything to the candidate or anyone else. Surface the page link under the meeting in the calendar section with `→ prep (guide drafted)`.
+
+### Save the briefing to the Daily Journal
+
+After producing the briefing, write it into today's Daily Journal page - the same page found or created in the Interview auto-prep step. Reuse it; the find-first and duplicate-page rules there apply verbatim (never create a second page, flag if two exist).
+
+- Write the briefing into the page **body**, as one block headed `Morning briefing - HH:MM` (Europe/Prague), keeping the same five sections (TL;DR, calendar, overnight signals, goal drift, the one thing).
+- Dedup the block: the scheduled ~07:00 run may have already written a morning-briefing block for today. If one exists, update it in place rather than appending - one briefing block per day. (Use `update_content` with old_str/new_str for the edit.)
+- Leave the structured fields alone: do NOT write into Accomplishments, Tomorrow's Goals, Mood, Gratitude, or Challenges. Accomplishments and Tomorrow's Goals are maintained from the day's work separately; the rest are mine. The briefing lives in the body only.
+- **Confidentiality scrub (mandatory).** The journal is more persistent and less private than a chat reply, so the saved copy must never contain sensitive specifics: salary figures, % to midpoint, named compensation nominations, offer numbers, personnel/PIP/termination details, or anything sourced from #apify-team-leaders, #offer-*, or #data-finance. Aggregate or pseudonymize instead - "comp nominations prepped for Product dept", "one L4 report's band review". The full, unredacted briefing stays in the chat reply only.
+- Confirm in one line at the end of the chat briefing which Daily Journal page the summary was saved to.
 
 ## Format rules
 
