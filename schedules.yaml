@@ -1,54 +1,107 @@
-# Schedules — Automation Configuration
+# Schedules — Automation manifest
 #
-# Define recurring automations that Claude runs on schedule.
-# These require a cron-like scheduler to trigger Claude Code sessions.
+# IMPORTANT: this file does NOT trigger anything. It is a manifest of the
+# routines that should run. The actual scheduler is Claude Code's web Routines
+# (trigger settings on claude.ai/code), which fire a fresh Claude session at a
+# cron time against a specific repo. Those triggers do not read this file.
 #
-# See docs/setup-guide.md for how to set up automated scheduling.
+# Two fields describe each routine:
+#   enabled: whether we WANT it to run (intent)
+#   live:    whether a web trigger actually exists for it right now (reality)
+# enabled: true + live: false  =>  needs a web trigger created (see bottom of file).
 #
-# Each schedule entry defines:
-#   - skill: The /command to run
-#   - frequency: Cron-like schedule description
-#   - enabled: Whether this automation is active
-#   - notes: What this automation does
+# Keep this file in sync with the real triggers. To see the real triggers in an
+# interactive/authorized session, list them via the remote trigger tooling.
 
 schedules:
-  - name: "Morning Briefing"
+  # --- Live: web triggers that actually fire (verified 2026-07-30) ---
+
+  - name: "Morning Chief of Staff"
     skill: "/gm"
-    frequency: "Daily at 07:30 Europe/Prague"
-    cron: "30 7 * * *"        # interpret in Europe/Prague (05:30 UTC summer / 06:30 UTC winter)
+    repo: "vojtakopal/ai-chief-of-staff"
+    frequency: "Daily, 07:30 Europe/Prague (see drift note)"
+    cron: "30 7 * * *"
     timezone: "Europe/Prague"
     enabled: true
-    notes: "Full briefing with calendar, tasks, and urgent items. Time matches the 07:30 run in .claude/commands/gm.md."
+    live: true
+    notes: >
+      Runs /gm in a fresh session and writes the briefing into today's Daily
+      Journal. DRIFT: the real web trigger is pinned to 05:00 UTC (cron '0 5 * * *'),
+      which is 07:00 Prague in summer and 06:00 in winter - it does NOT track 07:30
+      Prague. Fix by recreating the trigger as timezone-aware Europe/Prague at 07:30.
+
+  - name: "Data Pipeline Review"
+    skill: "/review-pipelines"
+    repo: "apify/vko-data-platform-admin"
+    frequency: "Daily, 18:00 Europe/Prague"
+    cron: "0 16 * * *"            # 16:00 UTC = 18:00 Prague (summer); drifts to 17:00 in winter
+    timezone: "UTC (pinned)"
+    enabled: true
+    live: true
+    notes: "Reviews production data-pipeline changes for next-day-run risk before EOD."
+
+  - name: "PR Code Reviews"
+    skill: "(code review - not a slash command)"
+    repo: "apify/snowflake-dbt"
+    frequency: "Event-driven: fires when a PR is marked ready for review"
+    cron: null                     # not time-based
+    enabled: true
+    live: true
+    notes: "Reviews the PR and posts findings as review comments. No clock; triggered by PR events."
+
+  # --- Intended but NOT wired to a web trigger yet (enabled + live:false) ---
+  # These will not run until a web trigger is created for each (see bottom of file).
+  # NOTE: /triage, /my-tasks and /enrich are the upstream starter commands and are
+  # not yet personalised - personalise before wiring them live, or the runs will be generic.
 
   - name: "Midday Triage"
     skill: "/triage"
-    frequency: "Daily at 12:00pm"
+    repo: "vojtakopal/ai-chief-of-staff"
+    frequency: "Daily, ~12:00 Europe/Prague"
+    cron: "3 12 * * *"             # off-minute on purpose
+    timezone: "Europe/Prague"
     enabled: true
-    notes: "Scan all channels for items needing attention"
+    live: false
+    notes: "Scan channels for items needing attention. Needs a web trigger. Personalise /triage first."
 
   - name: "Evening Triage"
     skill: "/triage"
-    frequency: "Daily at 5:00pm"
+    repo: "vojtakopal/ai-chief-of-staff"
+    frequency: "Daily, ~17:00 Europe/Prague"
+    cron: "3 17 * * *"
+    timezone: "Europe/Prague"
     enabled: true
-    notes: "End of day inbox check"
+    live: false
+    notes: "End-of-day inbox check. Needs a web trigger. Personalise /triage first."
 
   - name: "Task Check"
     skill: "/my-tasks overdue"
-    frequency: "Every 2 hours, 8am-8pm"
+    repo: "vojtakopal/ai-chief-of-staff"
+    frequency: "Every 2 hours, 08:00-20:00 Europe/Prague"
+    cron: "7 8-20/2 * * *"
+    timezone: "Europe/Prague"
     enabled: true
-    notes: "Warn about overdue or at-risk tasks"
+    live: false
+    notes: "Warn about overdue or at-risk tasks. Needs a web trigger. Personalise /my-tasks first."
 
   - name: "Relationship Check"
     skill: "/enrich stale"
-    frequency: "Weekly, Monday at 9am"
-    enabled: false
-    notes: "Surface contacts that need attention"
+    repo: "vojtakopal/ai-chief-of-staff"
+    frequency: "Weekly, Monday ~09:00 Europe/Prague"
+    cron: "7 9 * * 1"
+    timezone: "Europe/Prague"
+    enabled: true
+    live: false
+    notes: "Surface contacts overdue for engagement per tier cadence. Needs a web trigger."
 
-# To set up automated scheduling, you need a way to trigger
-# Claude Code sessions on a schedule. Options:
+# ---------------------------------------------------------------------------
+# Wiring the not-yet-live routines
 #
-# 1. macOS: Use cron or launchd to run `claude --command "/gm"`
-# 2. Linux: Use cron to run `claude --command "/gm"`
-# 3. Manual: Just type /gm when you start your day
-#
-# Most users start with manual invocation and add automation later.
+# Web triggers cannot be created from a headless session - they are created in
+# Claude Code trigger settings (claude.ai/code) or via the remote trigger API in
+# an authorized session. For each routine above with live:false, create a trigger:
+#   - Repo:     the `repo` field
+#   - Schedule: the `cron` field, timezone Europe/Prague
+#   - Prompt:   "Run the <skill> command." (e.g. "Run the /triage command.")
+# Then flip live:true here so this manifest keeps matching reality.
+# ---------------------------------------------------------------------------
