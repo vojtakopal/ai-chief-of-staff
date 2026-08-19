@@ -17,7 +17,7 @@ A single mobile-readable briefing, shown in chat and saved to today's Daily Jour
 - Pull calendar events for today (`vojtech.kopal@apify.com`, Europe/Prague timezone).
 - Search Slack channels and DMs for unread mentions since 18:00 previous workday.
 - Search Gmail inbox for unread threads where I am a direct recipient, since the same cutoff.
-- For each 1:1 today, surface the report's recent GitHub activity and last retro commitments in one line.
+- For each 1:1 today with a direct report, draft a full pre-1:1 brief (see "1:1 auto-prep" below) and surface it in the calendar section.
 - Cross-reference everything against `goals.yaml` themes and weights.
 
 ### Interview auto-prep (when interviews are on today's calendar)
@@ -33,6 +33,18 @@ If today's calendar has any interview (organiser is the Talent Acquisition Calen
 - Keep the standard Apify pitch blurb verbatim: "Apify platform & Actors, data complexity (usage-based billing, 19k+ Actors, multiple pricing models), data team (6 → 10+, first data scientist), stack (Snowflake, Keboola, Redash, Mixpanel, Segment, HubSpot), 1/3/6 month milestones."
 - Tailor section 2's prompts to the role: Data Engineer → pipelines/orchestration, dbt (incremental, SCD2), Snowflake, ingestion/reverse-ETL, data quality, hiring task = dbt; Data Scientist/Analyst → modelling, experimentation, stakeholder translation, the retention-vs-recurring-revenue framing.
 - These are drafts in my own Notion - create them without asking, but do not send anything to the candidate or anyone else. Surface the page link under the meeting in the calendar section with `→ prep (guide drafted)`.
+
+### 1:1 auto-prep (when 1:1s with direct reports are on today's calendar)
+
+For each 1:1 today with a direct report - calendar titles like "<Name> / Vojtech sync", "Vojtech / <Name> sync", "<Name> <> Vojta 1:1" - draft a pre-1:1 brief so I can walk in prepared. The person must be a direct report in `contacts/team.yaml`. SKIP 1:1s that are not with reports: my manager (Jan / Zenda), People (Simona / Simi), peers, external, and coffee chats get no auto-prep.
+
+- Run the full `/1on1 <Name>` logic for each: resolve the GitHub handle from `contacts/team.yaml`, refresh then read the project #42 snapshot filtered to their handle (per the refresh steps in `/1on1`), search their recent Slack, and pull their last 1:1 notes from Notion. Produce the standard six-part /1on1 briefing (two-line summary, what's on their plate, recent signals, from last 1:1, 2-3 topics to raise, what not to raise, and the 15-minute pick).
+- Parent the brief as a subpage under today's Daily Journal page - the SAME page and the SAME mandatory find-first / no-duplicate rules as the Interview auto-prep step above (never create a second daily page; flag if two exist).
+- Title the subpage `1:1 prep <Name>`. Keep it distinct from the running "1:1 <Name>" notes page in the 1:1s hub - do NOT edit that hub page; this is a fresh prep subpage in the journal.
+  - Dedup: if a `1:1 prep <Name>` subpage already exists under today's page (the ~07:00 routine, or an earlier interactive /1on1, may have created it), update it in place rather than creating a second.
+- Formatting: pass real Markdown with genuine newlines (a `## ` heading, paragraphs, `- ` bullet lines) - never the literal backslash-n escape, never one giant bold block. Same rule as under "Save the briefing" below.
+- **Confidentiality scrub (mandatory, stricter here).** A 1:1 brief is sensitive and the journal is persistent, so the saved subpage must never contain: salary figures, % to midpoint, comp nominations, PIP / termination / probation, health or therapy, or any Mood / Gratitude / personal content from the 1:1 notes. Aggregate or pseudonymize ("career-ladder conversation due", "band review pending with People") and keep the full, unredacted brief in the chat reply only. This mirrors the sensitive-1:1-topic rules in `/1on1` and `/enrich`.
+- These are drafts in my own Notion - create them without asking; never message the report. Surface each brief's page link under its meeting in the calendar section with `→ 1:1 prep (brief drafted)`.
 
 ### Save the briefing to the Daily Journal
 
