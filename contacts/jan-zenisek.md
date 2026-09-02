@@ -36,7 +36,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-20
-- Channel: 1:1 (11:00) + Design-Data-Product-Store sync (11:40)
-- Summary: Weekly sync, followed by the product-store sync (Zuzka, Filip Cicvarek, Zdenek Kuncar). Data-side topics brought: definition-drift mechanism for product changes (third incident this half), fraud model live with enforcement gated on T&S, 50k Actors metrics delivered, payout-deduction wording risk.
-- Follow-up needed: LVL 7 / DS-track ladder definition still needs a committed date. DE offer decision this week - confirm his sign-off path. L4 comp band closure with People (Simona) feeds it.
+- Date: 2026-08-24
+- Channel: Mid-year check-in (1:1)
+- Summary: Your mid-year review with him. You brought the self-assessment - wins (hiring engine, fraud model live, semantic-layer/Cortex rollout, cost governance with H1 credits growing slower than revenue) and honest growth areas (sprint planning discipline, follow-through under load, the people-development cadence you owe reports). Range-position feedback shared per the cycle (feedback check-in, not a negotiation).
+- Follow-up needed: The load-bearing ask is defining the LVL 7 / manager-track ladder - your own progression and how you calibrate the team both depend on it. Keep pressing until it has a committed date. L4 band closure with People (Simona) still feeds hiring.

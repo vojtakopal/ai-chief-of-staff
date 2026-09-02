@@ -45,7 +45,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-16
-- Channel: Slack (#data-team-internal)
-- Summary: Shipped the MongoDB extractor migration (native -> python extractor filtering the versions field, with table backup) cleanly; purged stale Snowflake accounts/workspaces after final warning. Carried alerts duty gaps during Bara/Kuba absences ("v kombajnu" Fri). Sat on Jana Barkova on-site (16 Jul) and DE HM calls.
-- Follow-up: 1:1 Tue 21 Jul 14:10. DE offer decision conversation - needs your Ashby scorecards in first. AWS savings plan is his Iteration 13 commitment - status check. Cost post-mortem structure still open (carried since June).
+- Date: 2026-08-20
+- Channel: 1:1 + board review
+- Summary: AWS cost work landed - applied the new savings plan, quantified ~77% cost coverage and named the gaps. Overnight act2runs backfill (Aug-6 gap) completed cleanly. Board still very heavy (~30+ open). Store tracking-inconsistency finding pushed to product.
+- Follow-up: IC-vs-TL ladder direction + brag doc still open - mid-year window forces it. Hard deadline: MFA + Strong-auth Phase 3 (#445/#747) due 1 Sep. Protect his capacity from board sprawl.

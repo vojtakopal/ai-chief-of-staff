@@ -36,6 +36,7 @@
 
 ## Last interaction
 
-- Date: 2026-06-15 (start)
-- Channel: In person (Day 1)
-- Follow-up needed: Daily 10-min check-in through week 1; confirm access landed; set the day-30 review.
+- Date: 2026-08-24
+- Channel: 1:1
+- Summary: ~10 weeks in. Carried the recurring-revenue x retention analysis (#844) to in-review - her flagship 2026 goal - and pivoted her main focus to the MCP setup-moment discovery (#845), which brings her into the AI initiative as planned. snowflake-dbt access provisioned (USER_TEREZA_NOVOTNA, 24 Aug). Clear, self-directed on priorities.
+- Follow-up: DS career ladder STILL owed by you (open since 6 Jul) - mid-year cycle (assessments Aug 24-Sep 25) forces it now. Close #844 and agree how it's presented to stakeholders before she fully turns to MCP.

@@ -44,7 +44,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-10
-- Channel: Slack (#data-team-internal)
-- Summary: Pre-vacation handoff: flagged new PROXY_UNBLOCKER_UNITS in platform service usage to Tom (parse on actor_run + billing question); she configures after her return. On vacation since 11 Jul.
-- Follow-up: Back this week - 1:1 Tue 21 Jul 15:20. Reopen: #530 Creators KPI definition closure, #626 multi-tenant standby (pipeline fields merged 10 Jul, dashboard exposure waits for her), PROXY_UNBLOCKER_UNITS configuration. Growth-path conversation was deferred until after vacation - name a date.
+- Date: 2026-08-20
+- Channel: Board review + 1:1
+- Summary: Back from vacation. Billing-period correctness work continues (#738); #846 payout fraudsters (L, in progress). #626 multi-tenant standby STILL "Ready" after months - the chronic stuck item.
+- Follow-up: Decide #626 - commit with a date or kill it. Growth-path / ladder date still owed (deferred pre-vacation). PROXY_UNBLOCKER_UNITS config was hers to finish on return.

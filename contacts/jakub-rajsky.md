@@ -48,7 +48,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-27
-- Channel: Slack DM
-- Summary: Back from vacation. Planning a 1-3pm sync with you on Segment next steps and event-marketing next steps (you'll tee up event marketing at the team sync, then go deeper together). Prior fortnight: fraud model shipped live/self-serve, Segment mapping session, 50k Actors metrics.
-- Follow-up: Career-ladder + 2026-goals conversation STILL owed (fourth carry now). Segment vendor decision (API-calls vs MTU model) feeding into the Twilio pricing talks. Fraud enforcement stays gated on T&S sign-off.
+- Date: 2026-08-20
+- Channel: Board review + planning
+- Summary: Heaviest load on the team - 12 open in It15 plus the entire Product Personas v2 epic (#802-807) pre-tagged for It16, on top of the Intercom-tags to Segment/Growthbook chain and LLM-to-MCP work. Fraud model live and self-serve. Back from his week off.
+- Follow-up: Load-balance - sequence Personas v2 so it isn't all on him. Career-ladder + 2026-goals conversation STILL owed (fifth carry). Segment vendor decision still feeding the Twilio talks.

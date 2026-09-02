@@ -42,7 +42,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-27
-- Channel: Slack DM
-- Summary: Brief alerts-duty/connection handoff ("Ok, odpoj se"). Back from OOO the prior week. Integrations dashboard overhaul shipped; semantic-layer validation queries (#168) are her live It13 work feeding the Cortex/apify-analyst rollout.
-- Follow-up: HubSpot handover package once the DE hire lands. Career-ladder misalignment conversation still open. Confirm It14 scope at planning.
+- Date: 2026-08-20
+- Channel: Board review + #data-alerts
+- Summary: MCP dashboard analysis cluster in flight - conversion, medians, aha/habit (#858, #872-875) - plus the HS Product Signal Matrix. Triaging Keboola/Segment/Tableau refresh failures with Marketa competently.
+- Follow-up: Career-ladder misalignment conversation still open (DA-track vs what she does). HubSpot handover package once the DE hire lands. Confirm It16 scope keepers.

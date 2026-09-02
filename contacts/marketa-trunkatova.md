@@ -41,7 +41,7 @@
 
 ## Last interaction
 
-- Date: 2026-07-16
-- Channel: Slack (via Tom's cleanup post)
-- Summary: Back from vacation (~13 Jul, welcomed at sync); cleaned up her old Tableau workbooks as part of the workspace purge. Had #data-alerts duty week of 6-13 Jul.
-- Follow-up: 1:1 Tue 21 Jul 8:30 - first since her return; check how Tereza's onboarding buddy role is going and close the cost post-mortem handover thread (open since June).
+- Date: 2026-08-19
+- Channel: 1:1
+- Summary: Ran the finance-data show during your vacation: shipped the UMPL/UDPL revenue-model rebuild (new UMPL v2, MRR-by-status repoint, Odoo reconciliation, finance validation) and kicked off the Data Governance epic (#850). ~9 closed in the sprint. Now the data lead for the fundraising workstream (actor-category counts, beyond-scraping revenue share) - keep that out of shared notes.
+- Follow-up: Career ladder (#350) still open - mid-year forces it; she operated above level in your absence, so the evidence is there. Data Governance scope + SOC2 access review (#893, It16) need clear ownership/dates. #432 Payroll Store devs is shared with you - confirm the split.
