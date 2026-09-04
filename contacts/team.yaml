@@ -96,6 +96,23 @@ team:
       - analytics_engineer_bar
       - semantic_layer
 
+  - name: Jana Barková
+    short: Jana
+    github: TBD  # dbt/repos access still being set up - confirm handle in 1:1
+    slack: U0BR9953LUA
+    email: jana.barkova@apify.com
+    timezone: Europe/Belgrade
+    role: Senior Data Engineer I
+    current_focus: >
+      Second data engineer (with Tom). Joined 24 Aug 2026 from Kiwi.com.
+      Ramping on Keboola pipelines, Funnel.io -> BigQuery extractors, dbt setup.
+      Strategically the added capacity that de-risks the semantic layer.
+    comms_style: TBD
+    recent_topics:
+      - onboarding_ramp
+      - keboola_pipelines
+      - dbt_setup
+
 # Note: the "Jan" in the original scaffold is Jan Zeníšek (Zenda / Žeňďa), VP Product —
 # Vojta's MANAGER, not a report. He is not part of this team roster.
 # See his contact file: contacts/jan-zenisek.md
