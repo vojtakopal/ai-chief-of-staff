@@ -11,7 +11,7 @@
 | Tier | 1 |
 | Email | jana.barkova@apify.com |
 | Slack | U0BR9953LUA |
-| GitHub | TBD (confirm in 1:1 - dbt/repos access still being set up) |
+| GitHub | janabarkova |
 | Timezone | CET (Slack: Europe/Belgrade) |
 | Started | 24 Aug 2026 |
 | Met through | Hired into the data team (second data engineer, alongside Tom) |

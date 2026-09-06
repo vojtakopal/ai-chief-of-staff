@@ -98,7 +98,7 @@ team:
 
   - name: Jana Barková
     short: Jana
-    github: TBD  # dbt/repos access still being set up - confirm handle in 1:1
+    github: janabarkova
     slack: U0BR9953LUA
     email: jana.barkova@apify.com
     timezone: Europe/Belgrade
