@@ -26,7 +26,9 @@ schedules:
     live: true
     notes: >
       Runs /gm in a fresh session and writes the briefing into today's Daily
-      Journal. DRIFT: the real web trigger is pinned to 05:00 UTC (cron '0 5 * * *'),
+      Journal. Also surfaces a chat-only "Recent Notion activity" proxy scan
+      (notion-list-recent-pages) so recent changes don't slip; not saved to the journal.
+      DRIFT: the real web trigger is pinned to 05:00 UTC (cron '0 5 * * *'),
       which is 07:00 Prague in summer and 06:00 in winter - it does NOT track 07:30
       Prague. Fix by recreating the trigger as timezone-aware Europe/Prague at 07:30.
 

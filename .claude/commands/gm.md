@@ -9,6 +9,7 @@ A single mobile-readable briefing, shown in chat and saved to today's Daily Jour
 1. **TL;DR** — one sentence on the day's shape: heavy / normal / light, and why.
 2. **Today's calendar** — meetings only. Flag the 2-3 that need actual prep with `→ prep`.
 3. **Overnight signals** — Slack mentions in channels I own (#data, #data-alerts, team DMs) and email threads requiring my response. Aggregate by topic, do not list every message.
+3b. **Recent Notion activity** (chat only, never saved to the journal) — a proxy scan of pages I have recently touched in Notion, surfaced only when one looks like an open thread or a change worth a follow-up. Call `notion-list-recent-pages` and keep only pages that are genuinely recent (roughly this week) AND actionable; drop the standing re-visits (old daily pages, reference/wiki pages, JDs I keep reopening). This list is "viewed/touched", not a verified edit log — frame each item as "worth a look", never as "you changed X". If nothing stands out, omit this section entirely; do not list pages for the sake of it.
 4. **Goal drift watch** — if today's calendar allocates more than 30% of working hours to a theme weighted under 20% in `goals.yaml`, flag it.
 5. **The one thing** — the single highest-leverage item I should do today, grounded in `goals.yaml` priorities.
 
@@ -17,6 +18,7 @@ A single mobile-readable briefing, shown in chat and saved to today's Daily Jour
 - Pull calendar events for today (`vojtech.kopal@apify.com`, Europe/Prague timezone).
 - Search Slack channels and DMs for unread mentions since 18:00 previous workday.
 - Search Gmail inbox for unread threads where I am a direct recipient, since the same cutoff.
+- Pull my recently-touched Notion pages via `notion-list-recent-pages` (limit ~25) as a proxy for what I have been working on — the connection cannot filter by "edited by me since X" (that search filter is gated and the database query is rate-capped), so the recently-viewed list is the closest available signal. Filter it down per the "Recent Notion activity" section above before surfacing anything.
 - For each 1:1 today with a direct report, draft a full pre-1:1 brief (see "1:1 auto-prep" below) and surface it in the calendar section.
 - Cross-reference everything against `goals.yaml` themes and weights.
 
@@ -50,7 +52,7 @@ For each 1:1 today with a direct report - calendar titles like "<Name> / Vojtech
 
 After producing the briefing, write it into today's Daily Journal page - the same page found or created in the Interview auto-prep step. Reuse it; the find-first and duplicate-page rules there apply verbatim (never create a second page, flag if two exist).
 
-- Write the briefing into the page **body** under a `Morning briefing - HH:MM` (Europe/Prague) heading, keeping the same five sections (TL;DR, calendar, overnight signals, goal drift, the one thing).
+- Write the briefing into the page **body** under a `Morning briefing - HH:MM` (Europe/Prague) heading, keeping the same five sections (TL;DR, calendar, overnight signals, goal drift, the one thing). Do NOT write the "Recent Notion activity" signal (3b) into the journal — it is a live chat-only signal.
 - **Formatting - pass real Markdown, never literal escapes.** The content argument must contain actual newlines (real line breaks between sections and one list item per line), NOT the two-character sequence backslash-n, which Notion renders as a literal "n"/"nn". Do not wrap the whole briefing in a single heading or bold run - use a `## Morning briefing - HH:MM` heading, then normal paragraphs and `- ` bullet lines. Do not backslash-escape colons, hyphens, or `>` (write `13:30-14:00`, not `13\:30-14\:00`). If the Notion tool needs multi-line text, provide genuine line breaks in the string.
 - Dedup the block: the scheduled ~07:00 run may have already written a morning-briefing block for today. If a `Morning briefing` heading already exists on the page, replace that block's content in place rather than appending a second - one briefing block per day. (If the body contains only the prior briefing, `replace_content` with `new_str` rewrites it cleanly; otherwise target the block with `update_content` old_str/new_str.)
 - Leave the structured fields alone: do NOT write into Accomplishments, Tomorrow's Goals, Mood, Gratitude, or Challenges. Accomplishments and Tomorrow's Goals are maintained from the day's work separately; the rest are mine. The briefing lives in the body only.
