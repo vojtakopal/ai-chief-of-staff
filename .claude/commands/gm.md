@@ -9,7 +9,11 @@ A single mobile-readable briefing, shown in chat and saved to today's Daily Jour
 1. **TL;DR** — one sentence on the day's shape: heavy / normal / light, and why.
 2. **Today's calendar** — meetings only. Flag the 2-3 that need actual prep with `→ prep`.
 3. **Overnight signals** — Slack mentions in channels I own (#data, #data-alerts, team DMs) and email threads requiring my response. Aggregate by topic, do not list every message.
-3b. **Recent Notion activity** (chat only, never saved to the journal) — a proxy scan of pages I have recently touched in Notion, surfaced only when one looks like an open thread or a change worth a follow-up. Call `notion-list-recent-pages` and keep only pages that are genuinely recent (roughly this week) AND actionable; drop the standing re-visits (old daily pages, reference/wiki pages, JDs I keep reopening). This list is "viewed/touched", not a verified edit log — frame each item as "worth a look", never as "you changed X". If nothing stands out, omit this section entirely; do not list pages for the sake of it.
+3b. **Recent Notion activity** (chat only, never saved to the journal) — a proxy scan of pages I have recently touched in Notion, surfaced only when one looks like an open thread or a change worth a follow-up. Method:
+   - Call `notion-list-recent-pages` (limit ~25-30). This ranks by BOTH recency and frequency, so stale-but-often-reopened pages (old dailies, wiki/reference pages, the Data Engineer JDs, culture pages, databases) rank high — do not trust position. Drop those standing re-visits first.
+   - For the 2-5 remaining candidates that look actionable, VERIFY recency: `notion-fetch` each and read `page_last_edited_at`. Keep only pages edited in the last 7 days. Do not verify the whole list — only the actionable shortlist, to keep the run cheap.
+   - Drop self-authored pages with no external change to react to (my own daily journal pages, the 1:1s hub) — note them at most, do not flag them as action.
+   - Frame each surviving item as "worth a look" with its last-edited date, never as "you changed X" (it is viewed/touched, not a verified author log). If nothing survives, omit this section entirely; do not list pages for the sake of it.
 4. **Goal drift watch** — if today's calendar allocates more than 30% of working hours to a theme weighted under 20% in `goals.yaml`, flag it.
 5. **The one thing** — the single highest-leverage item I should do today, grounded in `goals.yaml` priorities.
 
