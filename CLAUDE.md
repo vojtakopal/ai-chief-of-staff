@@ -70,6 +70,6 @@ When pulling work or activity by team member, use the GitHub handle.
 
 ## Commands
 
-See `.claude/commands/` for callable workflows: `/gm`, `/weekly-retro`, `/1on1`.
+See `.claude/commands/` for callable workflows: `/gm`, `/weekly-retro`, `/1on1`, `/midyear`.
 Commands live in `.claude/commands/` so Claude Code discovers them from the repo checkout directly - no install step needed. `install.sh` still copies them to `~/.claude/commands/` for local setups.
 Upstream starter commands also present: `/triage`, `/my-tasks`, `/enrich` (not yet personalised).
