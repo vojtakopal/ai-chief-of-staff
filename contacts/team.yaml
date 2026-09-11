@@ -113,6 +113,43 @@ team:
       - keboola_pipelines
       - dbt_setup
 
+  - name: Tereza Novotná
+    short: Terka
+    github: t3r3znovotna
+    slack: U0B5YKB0XTR
+    email: tereza.novotna@apify.com
+    timezone: Europe/Prague
+    role: Senior Data Scientist I
+    current_focus: >
+      Apify's first data scientist. Joined 15 Jun 2026 from DataSentics.
+      Carried the recurring-revenue x retention analysis (#844) to in-review,
+      now pivoted to MCP setup-moment discovery (#845). Defining the DS
+      function rather than inheriting it. DS career ladder still owed to her.
+    comms_style: TBD
+    recent_topics:
+      - retention_recurring_revenue
+      - mcp_setup_moment_discovery
+      - ds_function_definition
+
+  - name: Zuzana Laubeová
+    short: Zuzka
+    github: zuzanalaubeova
+    slack: U0BL4B1LW5R
+    email: zuzana.laubeova@apify.com
+    timezone: Europe/Prague
+    role: Junior Data Analyst
+    current_focus: >
+      Joined ~3 Aug 2026 from ~10 years of corpus linguistics at Charles
+      University. Onboarding supported by Martina. Holds the Hlidac shopu
+      project as a sandbox; needs real #42 tickets. Text/LLM background is a
+      genuine edge for the team's classification and agentic work.
+    comms_style: >
+      Warm, proactive, low-ego; asks for help openly. Czech and English.
+    recent_topics:
+      - onboarding_ramp
+      - hlidac_shopu
+      - first_sprint_scoping
+
 # Note: the "Jan" in the original scaffold is Jan Zeníšek (Zenda / Žeňďa), VP Product —
 # Vojta's MANAGER, not a report. He is not part of this team roster.
 # See his contact file: contacts/jan-zenisek.md
