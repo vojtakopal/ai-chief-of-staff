@@ -66,6 +66,7 @@ team:
 
   - name: Bára Čelechovská
     short: Barca
+    aliases: [Barbora, Bára]
     github: BarCele
     slack: U079ZF68LLF
     email: barbora.celechovska@apify.com
@@ -112,6 +113,39 @@ team:
       - onboarding_ramp
       - keboola_pipelines
       - dbt_setup
+
+  - name: Tereza Novotná
+    short: Terka
+    aliases: [Terez, Tereza]
+    github: t3r3znovotna
+    slack: U0B5YKB0XTR
+    email: tereza.novotna@apify.com
+    timezone: Europe/Prague
+    role: Senior Data Scientist (L4)
+    current_focus: >
+      Apify's first data scientist. Joined 15 Jun 2026 from DataSentics.
+      First project: optimising retention vs recurring revenue. Also defining
+      what "data science at Apify" means as a function.
+    comms_style: TBD
+    recent_topics:
+      - retention_vs_recurring_revenue
+      - data_science_function_definition
+
+  - name: Zuzana Laubeová
+    short: Zuzka
+    github: zuzanalaubeova
+    slack: U0BL4B1LW5R
+    email: zuzana.laubeova@apify.com
+    timezone: Europe/Prague
+    role: Junior Data Analyst
+    current_focus: >
+      Joined ~3 Aug 2026; onboarding supported by Martina. Ex-academic
+      (corpus linguistics, Charles University) - a real edge for the team's
+      LLM / text-classification / agentic work.
+    comms_style: >
+      Warm, proactive, low-ego; asks for help openly. Czech and English.
+    recent_topics:
+      - onboarding_ramp
 
 # Note: the "Jan" in the original scaffold is Jan Zeníšek (Zenda / Žeňďa), VP Product —
 # Vojta's MANAGER, not a report. He is not part of this team roster.
